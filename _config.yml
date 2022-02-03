@@ -21,8 +21,8 @@
 title: Programming
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This page contents the study materials for programming club (spring 2022) at VSB-TUO.
-baseurl: "/lectures" # the subpath of your site, e.g. /blog
+  Page for programming club at VSB-TUO (spring 2022).
+#baseurl: "/lectures" # the subpath of your site, e.g. /blog
 url: "https://kpostrava.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
@@ -32,6 +32,12 @@ github_username:  jekyll
 #theme: minima
 plugins:
   - jekyll-feed
+
+permalink: /:title:output_ext
+
+
+#navigation:
+#  - {file: "README.md", title: "readthis", icon: "home"}
 
 # Exclude from processing.
 # The following items will not be processed, by default.
