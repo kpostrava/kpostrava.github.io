@@ -25,3 +25,9 @@ Tento kroužek je koncipován jako navazující na kroužek pro začátečníky.
 - Funkce
 - Proměnná (typu integer a string)
 
+### Proměnné
+
+Úkoly navíc:
+- [Unikova hra](https://studio.code.org/projects/applab/E80ueH72KM8WSqk1bvPrdwk1IPv1J36EEW_Xhum__Mo "Unikova hra")
+- [Unikova hra (autor Matěj Chamrád)](https://studio.code.org/projects/applab/JLlNAmd3VcM0ItZXYBR-TCnfL_wLoTK52etVfogTHfQ "Unikova hra (autor Matěj Chamrád)")
+- [Malá nábosilka](https://studio.code.org/projects/applab/-hRWjKGg9Q8nzRiqLY1XzC_WWRawVgYgtxjtjDDbiR4 "Malá nábosilka")
