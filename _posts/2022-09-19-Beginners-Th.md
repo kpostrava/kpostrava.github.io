@@ -16,4 +16,4 @@ Místnost: EB207
 
 29.11. Hotové máme první 4 kapitoly, poslední se jmenuje Creating Art with Code
 
-
+6.11 - Dokončili jsme 6.lekci, Making sprites
