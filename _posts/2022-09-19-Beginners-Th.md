@@ -14,6 +14,8 @@ Místnost: EB207
 
 Čas: 14:30
 
-29.11. Hotové máme první 4 kapitoly, poslední se jmenuje Creating Art with Code
+29.9. Hotové máme první 4 kapitoly, poslední se jmenuje Creating Art with Code
 
-6.11 - Dokončili jsme 6.lekci, Making sprites
+6.10 - Dokončili jsme 6.lekci, Making sprites
+
+13.10 - Dokončili jsme 8 lekci, Virtuální zvířátko s laboratoří sprajtů
