@@ -27,3 +27,5 @@ Místnost: EB208
 4.11. - Naučili jsme používat cykly a vnořené cykly. (lekce 11,12)
 
 11.11. - Začali jsme pracovat s podmínkami. (lekce 13,14)
+
+18.11. - Pokračovali jsme s podmínkami. (lekce 15,16)
