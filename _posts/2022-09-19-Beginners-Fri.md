@@ -31,3 +31,5 @@ Místnost: EB208
 18.11. - Pokračovali jsme s podmínkami. (lekce 15,16)
 
 25.11. - Začali jsme s podmíněnými cykly (lekce 17,18)
+
+2.12. - Pokračujeme v práci s podmíněnými cykly (lekce 19, 20)
