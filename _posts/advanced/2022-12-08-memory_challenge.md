@@ -2,16 +2,17 @@
 layout: post
 title:  "Memory challenge"
 ---
-# Program memory challenge
+# Program "Memory challenge"
 
 Hra probíhá v kolech a funguje následujícím způsobem:
 1. Hráč si má za pět sekund zapamatovat pět čísel.
-2. Pak je má vepsat do textboxu . Pokud uhodne, tak další kolo si bude muset zkusit zapamatovat šest čísel za šest sekund.
-3. Pokud neuspěje, tak se mu ukážou čtyři čísla na čtyři sekundy.
-4. Vyhraje, pokud si pětkrát zapamatuje číslo.
-5. Prohraje pokud dříve pětkrát číslo napíše špatně.
-
-[Zde](https://studio.code.org/projects/applab/mbu_rC06TSKqfiraKegwSNAtKuePJ-c8Ivh79xyE7-I) je ukázka samotné hry.
+2. Pak je má vepsat do textboxu: 
+  a. Pokud uhodne, tak další kolo si bude muset zkusit zapamatovat šest čísel za šest sekund.
+  b. Pokud neuspěje, tak se mu ukážou čtyři čísla na čtyři sekundy.
+3. Hríč vyhraje, pokud si v pěti kolech zapamatuje číslo správně.
+6. Hráč prohraje pokud dříve pětkrát číslo napíše špatně.
+ 
+Tzn. hra má maximálně devět kol, protože pak už hráč musí buď prohrát nebo vyhrát. [Zde](https://studio.code.org/projects/applab/mbu_rC06TSKqfiraKegwSNAtKuePJ-c8Ivh79xyE7-I) je ukázka samotné hry.
 
 ## Čekání
 V programu je využity dva triky, které si zaslouží trochu okomentovat. První z nich je čekání. JavaScript neobsahuje přímo funkci `sleep`, takže je nutné si ji naimplementovat. Využili jsme `sleep` funkci ze [StackOverflow](https://stackoverflow.com/a/9748670/2091247):
