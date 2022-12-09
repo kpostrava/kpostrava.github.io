@@ -25,9 +25,43 @@ Tento kroužek je koncipován jako navazující na kroužek pro začátečníky.
 - Funkce
 - Proměnná (typu integer a string)
 
-### Proměnné
+V prvním půl roce znalost těchto konceptů ještě dále prohloubíme a zejména uplatníme při tvorbě aplikací s jednoduchými ovládacími prvky (textbox, tlačítko, dropdown). V druhé polovině roku, pak začneme pracovat s polem, což nám umožní ještě více rozšířit paletu aplikací.
 
-Úkoly navíc:
+## Práce s ovládacímí prvky
+
+Každý ovládací prvek má své unikátní jméno. Na následujícím obrázku vidíme aplikaci se třemi ovládacími prvky:
+1. TextBox - jak vidíme na obrázku jméno textboxu je `text_input1`. Jméno se objeví, když v AppLabu najedeme na ovládací prvek myší.
+2. Tlačítko - jeho jméno je `button_ok`.
+3. Label - popiska s textem "text", kde jméno ovládacího prvku je `label_text`.
+
+![kids](images/applab_basic.png)
+
+### getText - načtení hodnoty
+
+Jak tedy načteme textovou hodnotu ovládacího prvku do proměnné? Pro načtení textové hodnoty textboxu `text_input1` do proměnné `moje_promenna` napíšeme:
+```javascript
+var moje_promenna = getText("text_input1");
+```
+
+### setText - nastavení hodnoty
+
+Podobně potřebujeme občas hodnoty ovládacích prvků nastavovat. Nyní máme v proměnné `moje_promenna` hodnotu načtenou z textboxu. Nyní hodnotu nastavíme do popisky `label_text`:
+```javascript
+setText("label_text", moje_promenna);
+```
+
+### onEvent - reakce na událost
+
+V mnoha situacích potřebujeme ještě reagovat na události. Nejobvykleji se jedná o vstupy od uživatele jako je kliknutí na tlačítko, nebo zadání hodnoty. Reakce na stisknutí tlačítka `button_ok`, kde zkopírujeme hodnotu zadanou v text boxu do popisky  `label_text` bude vypadat následovně:
+```javascript
+onEvent("screen1", "click", function( ) {
+	var moje_promenna = getText("text_input1");
+	setText("label_text", moje_promenna);
+});
+```
+
+## Rozličné zajímavé úkoly
+
 - [Úniková hra](https://studio.code.org/projects/applab/E80ueH72KM8WSqk1bvPrdwk1IPv1J36EEW_Xhum__Mo "Unikova hra")
 - [Úniková hra (autor Matěj Chamrád)](https://studio.code.org/projects/applab/JLlNAmd3VcM0ItZXYBR-TCnfL_wLoTK52etVfogTHfQ "Unikova hra (autor Matěj Chamrád)")
 - [Malá nábosilka](https://studio.code.org/projects/applab/-hRWjKGg9Q8nzRiqLY1XzC_WWRawVgYgtxjtjDDbiR4 "Malá nábosilka")
