@@ -19,3 +19,5 @@ Místnost: EB207
 6.10 - Dokončili jsme 6.lekci, Making sprites
 
 13.10 - Dokončili jsme 8 lekci, Virtuální zvířátko s laboratoří sprajtů
+
+23.1. - Máme hotových prvních 10 lekcí kurzu
