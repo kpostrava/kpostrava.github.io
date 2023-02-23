@@ -20,4 +20,4 @@ Místnost: EB207
 
 13.10 - Dokončili jsme 8 lekci, Virtuální zvířátko s laboratoří sprajtů
 
-23.1. - Máme hotových prvních 10 lekcí kurzu
+23.2. - Máme hotových prvních 10 lekcí kurzu
