@@ -20,4 +20,7 @@ Zkuste program rozšířit:
 
 ## Studentské verze
 
-[Štěpán](https://studio.code.org/projects/applab/1inL4-_LCA1StixR5R8WeBb6Tb5tF8s6aVeF5IurY_A) 
+- [Štěpán](https://studio.code.org/projects/applab/1inL4-_LCA1StixR5R8WeBb6Tb5tF8s6aVeF5IurY_A) 
+
+- [Mikuláš](https://studio.code.org/projects/applab/_3Jqoi4a99BigqIDKwEiDhQRyGZVhUL309LYWasM5_M
+) 
