@@ -17,3 +17,7 @@ Hra probíhá v kolech a funguje následujícím způsobem:
 Zkuste program rozšířit:
 - Přidejte zobrazení aktuálního zlata, které má hráč natěženo.
 - Po poražení Orků přidejte hráčovi do inventáře "Kouzlo". Přidejte lokaci s čarodějnicí, kterou jde porazit pouze kouzlem.
+
+## Studentské verze
+
+[Štěpán](https://studio.code.org/projects/applab/1inL4-_LCA1StixR5R8WeBb6Tb5tF8s6aVeF5IurY_A) 
