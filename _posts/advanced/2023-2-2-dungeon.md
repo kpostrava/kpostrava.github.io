@@ -21,5 +21,6 @@ Zkuste program rozšířit:
 ## Studentské verze
 
 - [Štěpán](https://studio.code.org/projects/applab/1inL4-_LCA1StixR5R8WeBb6Tb5tF8s6aVeF5IurY_A) 
+- [Štěpán JSON verze](https://studio.code.org/projects/applab/WV2sXQu3mQT6pMGhbU2GDcdULpGN4FFTp-3NGe2usCg) 
 - [Mikuláš](https://studio.code.org/projects/applab/_3Jqoi4a99BigqIDKwEiDhQRyGZVhUL309LYWasM5_M) 
 - [Marek](https://studio.code.org/projects/applab/e5tYkt8TbW2a7KjA3LQpee2vhsxRIhhtTxDYW43LjhQ) 
