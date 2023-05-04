@@ -5,8 +5,6 @@ title:  "Dungeon"
 # Program "Dungeon"
 
 1. [Code.org](https://studio.code.org/projects/applab/vIsbWwNQW8jfWnvNfDna67jgp1qItTw7JRT4A5yCft8) verze
-2. [Repl.it]([https://replit.com/@RadimBaca/Dungeon?v=1](https://replit.com/@RadimBaca/Dungeon?v=1)) verze
-3. [Repl.it](https://replit.com/@RadimBaca/Dungeon-with-JSON?v=1) verze s JSON daty
 
 Hra probíhá v kolech a funguje následujícím způsobem:
 1. Hráč se pohybuje v jednoduchém dungeonu se třemi pozicemi
@@ -23,7 +21,7 @@ Zkuste program rozšířit:
 - Zkuste se pobavit s chatGPT, aby vám nabídl vhodné rozšíření hry
 
 ## Repl.it verze
-Nejprve se [připojte do Lorem Ipsum týmu](https://replit.com/teams/join/xvtsjzaadrqmanaknpncvlanyelasxgw-lorem-ipsum-team) na Repl.it. U Repl.it verze zkuste následující úkol:
+Nejprve se [připojte do Lorem Ipsum týmu](https://replit.com/teams/join/xvtsjzaadrqmanaknpncvlanyelasxgw-lorem-ipsum-team) na Repl.it, kde by jste měli nalézt HTML5 verzi Dungeonu. U této verze zkuste následující úkol:
 - Zkuste s pomocí chatGPT změnit rozložení tlačítek, aby se více podobalo rozložení v code.org. Zkuste si i sami něco nastudovat ke [grid-containeru](https://www.w3schools.com/css/css_grid_container.asp), který by se k tomuto účelu dal využít.
 - Zkuste podobné úkoly jako u Code.org verze.
 
