@@ -22,8 +22,10 @@ Zkuste program rozšířit:
 - Po poražení Orků přidejte hráčovi do inventáře "Kouzlo". Přidejte lokaci "hluboký les" s čarodějnicí, kterou jde porazit pouze kouzlem.
 - Zkuste se pobavit s chatGPT, aby vám nabídl vhodné rozšíření hry
 
-Repl.it verze
+## Repl.it verze
+Nejprve se [připojte do Lorem Ipsum týmu](https://replit.com/teams/join/xvtsjzaadrqmanaknpncvlanyelasxgw-lorem-ipsum-team) na Repl.it. U Repl.it verze zkuste následující úkol:
 - Zkuste s pomocí chatGPT změnit rozložení tlačítek, aby se více podobalo rozložení v code.org. Zkuste si i sami něco nastudovat ke [grid-containeru](https://www.w3schools.com/css/css_grid_container.asp), který by se k tomuto účelu dal využít.
+- Zkuste podobné úkoly jako u Code.org verze.
 
 ## Code.org studentské verze programu
 
