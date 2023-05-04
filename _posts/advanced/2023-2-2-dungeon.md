@@ -4,6 +4,10 @@ title:  "Dungeon"
 ---
 # Program "Dungeon"
 
+1. [Code.org](https://studio.code.org/projects/applab/vIsbWwNQW8jfWnvNfDna67jgp1qItTw7JRT4A5yCft8) verze
+2. [Repl.it]([https://replit.com/@RadimBaca/Dungeon?v=1](https://replit.com/@RadimBaca/Dungeon?v=1)) verze
+3. [Repl.it](https://replit.com/@RadimBaca/Dungeon-with-JSON?v=1) verze s JSON daty
+
 Hra probíhá v kolech a funguje následujícím způsobem:
 1. Hráč se pohybuje v jednoduchém dungeonu se třemi pozicemi
 2. Nejprve musí jít na západ natěžit zlato
@@ -11,14 +15,17 @@ Hra probíhá v kolech a funguje následujícím způsobem:
 4. Když má dost zlata, tak může nakoupit meč
 5. Na východě jsou Orkové. Pokud na ně hráč zaútočí a má meč, tak vyhrál. Jinak prohraje.
  
-[Zde](https://studio.code.org/projects/applab/vIsbWwNQW8jfWnvNfDna67jgp1qItTw7JRT4A5yCft8) je ukázka samotné hry.
-
 ## Rozšíření
 Zkuste program rozšířit:
-- Přidejte zobrazení aktuálního zlata, které má hráč natěženo.
-- Po poražení Orků přidejte hráčovi do inventáře "Kouzlo". Přidejte lokaci s čarodějnicí, kterou jde porazit pouze kouzlem.
+- Přidejte zobrazení aktuálního zlata, které má hráč natěženo a také dejte nahoru jméno lokace.
+- Přidejte do hry počet životů hráče. Pokud prohraje souboj, pak mu život odeberte a dejte do výchozí lokace.
+- Po poražení Orků přidejte hráčovi do inventáře "Kouzlo". Přidejte lokaci "hluboký les" s čarodějnicí, kterou jde porazit pouze kouzlem.
+- Zkuste se pobavit s chatGPT, aby vám nabídl vhodné rozšíření hry
 
-## Studentské verze
+Repl.it verze
+- Zkuste s pomocí chatGPT změnit rozložení tlačítek, aby se více podobalo rozložení v code.org. Zkuste si i sami něco nastudovat ke [grid-containeru](https://www.w3schools.com/css/css_grid_container.asp), který by se k tomuto účelu dal využít.
+
+## Code.org studentské verze programu
 
 - [Štěpán](https://studio.code.org/projects/applab/1inL4-_LCA1StixR5R8WeBb6Tb5tF8s6aVeF5IurY_A) 
 - [Štěpán JSON verze](https://studio.code.org/projects/applab/WV2sXQu3mQT6pMGhbU2GDcdULpGN4FFTp-3NGe2usCg) 
