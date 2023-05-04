@@ -22,8 +22,9 @@ Zkuste program rozšířit:
 
 ## Repl.it verze
 Nejprve se [připojte do Lorem Ipsum týmu](https://replit.com/teams/join/xvtsjzaadrqmanaknpncvlanyelasxgw-lorem-ipsum-team) na Repl.it, kde by jste měli nalézt HTML5 verzi Dungeonu. U této verze zkuste následující úkol:
-- Zkuste s pomocí chatGPT změnit rozložení tlačítek, aby se více podobalo rozložení v code.org. Zkuste si i sami něco nastudovat ke [grid-containeru](https://www.w3schools.com/css/css_grid_container.asp), který by se k tomuto účelu dal využít.
-- Zkuste podobné úkoly jako u Code.org verze.
+- S pomocí chatGPT změňte rozložení tlačítek, aby se více podobalo rozložení v code.org. Zkuste si i sami něco nastudovat ke [grid-containeru](https://www.w3schools.com/css/css_grid_container.asp), který by se k tomuto účelu dal využít.
+- Vytvořte závěrečnou HTML stránku, která se zobrazí po (ne)výhře.
+- Implementujte podobné úkoly jako u Code.org verze.
 
 ## Code.org studentské verze programu
 
