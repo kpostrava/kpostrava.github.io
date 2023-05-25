@@ -26,6 +26,28 @@ Nejprve se [připojte do Lorem Ipsum týmu](https://replit.com/teams/join/xvtsjz
 - Vytvořte závěrečnou HTML stránku, která se zobrazí po (ne)výhře.
 - Implementujte podobné úkoly jako u Code.org verze.
 
+### Načtení parametru v závěrečné stránce
+Pokud vytvoříte závěrečnou HTML stránku, kde budete zobrazovat výsledek souboje, pak jistě budete chtít i předat výsledek souboje. Nejprve tedy v scripts.js přesměrujeme na novou HTML stránku a zároveň přidáme parametr `result`:
+```JavaScript
+window.location.href = "end.html?result=win";
+```
+Parametr a jeho hodnotu specifikujeme za otazníkem. Teoreticky může být parametrů více (nicméně zde je jen jeden). Na stránce `end.html` pak parametr načteme v JavaScript kódu následujícím způsobem:
+```JavaScript
+function getQueryVariable(variable) {
+  var query = window.location.search.substring(1);
+  var vars = query.split("&");
+  for (var i=0;i<vars.length;i++) {
+    var pair = vars[i].split("=");
+    if (pair[0] == variable) {
+      return pair[1];
+    }
+  } 
+}
+  
+var result = getQueryVariable('result');
+```
+V proměnné result budeme mít v našem případě hodnotu `win`.
+
 ## Code.org studentské verze programu
 
 - [Štěpán](https://studio.code.org/projects/applab/1inL4-_LCA1StixR5R8WeBb6Tb5tF8s6aVeF5IurY_A) 
