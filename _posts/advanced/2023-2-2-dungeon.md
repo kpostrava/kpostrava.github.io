@@ -16,14 +16,17 @@ Hra probíhá v kolech a funguje následujícím způsobem:
 ## Rozšíření
 Zkuste program rozšířit:
 - Přidejte zobrazení aktuálního zlata, které má hráč natěženo a také dejte nahoru jméno lokace.
+- Přidejte zobrazení seznamu věcí, které má aktuálně u sebe.
 - Přidejte do hry počet životů hráče. Pokud prohraje souboj, pak mu život odeberte a dejte do výchozí lokace.
 - Po poražení Orků přidejte hráčovi do inventáře "Kouzlo". Přidejte lokaci "hluboký les" s čarodějnicí, kterou jde porazit pouze kouzlem.
 - Zkuste se pobavit s chatGPT, aby vám nabídl vhodné rozšíření hry
 
 ## Repl.it verze
 Nejprve se [připojte do Lorem Ipsum týmu](https://replit.com/teams/join/xvtsjzaadrqmanaknpncvlanyelasxgw-lorem-ipsum-team) na Repl.it, kde by jste měli nalézt HTML5 verzi Dungeonu. U této verze zkuste následující úkol:
-- S pomocí chatGPT změňte rozložení tlačítek, aby se více podobalo rozložení v code.org. Zkuste si i sami něco nastudovat ke [grid-containeru](https://www.w3schools.com/css/css_grid_container.asp), který by se k tomuto účelu dal využít.
+- S pomocí chatGPT změňte rozložení tlačítek, aby se více podobalo rozložení v code.org.
+- Implementujte ovládání hry tlačítky klávesnice.
 - Vytvořte závěrečnou HTML stránku, která se zobrazí po (ne)výhře.
+- Zkuste změnit barevné ladění celé stránky. Opět zkuste svoje změny konzultovat s chatGPT.
 - Implementujte podobné úkoly jako u Code.org verze.
 
 ### Načtení parametru v závěrečné stránce
@@ -47,6 +50,22 @@ function getQueryVariable(variable) {
 var result = getQueryVariable('result');
 ```
 V proměnné result budeme mít v našem případě hodnotu `win`.
+
+### Ovládání hry tlačítky klávesnice
+Pro ovládání hry tlačítky je potřeba přidat událost přímo na HTML dokument, který reprezentuje stránku. To provedeme následujícím způsobem:
+```JavaScript
+document.addEventListener("keydown", function(event) { // Handle the keydown event here 
+	if (event.key === "ArrowUp") { // Kód pro reakci na stisk klávesy šipka nahoru 
+		console.log("Stisknuta klávesa šipka nahoru"); 
+	}
+}
+```
+Zde je seznam několika klíčových kódů pro šipky:
+
+- Šipka nahoru: `ArrowUp`
+- Šipka dolů: `ArrowDown`
+- Šipka vlevo: `ArrowLeft`
+- Šipka vpravo: `ArrowRight`
 
 ## Code.org studentské verze programu
 

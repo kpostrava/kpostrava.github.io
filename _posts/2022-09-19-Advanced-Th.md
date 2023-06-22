@@ -69,3 +69,12 @@ onEvent("screen1", "click", function( ) {
 - [Memory challenge]({% post_url advanced/2022-12-08-memory_challenge %})
 - [Dungeon]({% post_url advanced/2023-2-2-dungeon %})
 - [JSON](https://bit.ly/3eTLeYH)
+
+## Dungeon hra vytvořená studenty kroužku
+V rámci kroužku studenti vytvořili svou varinatu hry Dungeon. Pokud máte zájem vyzkoušejte jednotlivé varianty této hry a následně [zde vložte své hodnocení jednotlivých verzí](https://forms.gle/9opLdAvNL8XhRCX67):
+
+- [Štěpán](https://dungeon-blbeceknakoni.lorem-ipsum-team.repl.co/)
+- [Michael](https://dungeon-misa2012.lorem-ipsum-team.repl.co/)
+- [Marek](https://dungeon-marekhornik.lorem-ipsum-team.repl.co/)
+- [Oli](https://dungeon-kanystrbenzinu.lorem-ipsum-team.repl.co/)- 
+- [Artek](https://dungeon-artek0027.lorem-ipsum-team.repl.co/)
