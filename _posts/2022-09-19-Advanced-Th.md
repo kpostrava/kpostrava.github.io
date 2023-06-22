@@ -76,5 +76,5 @@ V rámci kroužku studenti vytvořili svou varinatu hry Dungeon. Pokud máte zá
 - [Štěpán](https://dungeon-blbeceknakoni.lorem-ipsum-team.repl.co/)
 - [Michael](https://dungeon-misa2012.lorem-ipsum-team.repl.co/)
 - [Marek](https://dungeon-marekhornik.lorem-ipsum-team.repl.co/)
-- [Oli](https://dungeon-kanystrbenzinu.lorem-ipsum-team.repl.co/)- 
+- [Oli](https://dungeon-kanystrbenzinu.lorem-ipsum-team.repl.co/)
 - [Artek](https://dungeon-artek0027.lorem-ipsum-team.repl.co/)
