@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Začátečníci pátek"
-category: "bar"
 --- 
 
 ## Úvod

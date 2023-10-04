@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Pokročilí čtvrtek"
-category: "bar"
 --- 
 
 ## Úvod
