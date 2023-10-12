@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Dungeon"
+title:  "board game"
 ---
 # Board game
 
@@ -26,3 +26,23 @@ U této verze zkuste následující úkoly:
   1. Zvýší skóre hráče.
   2. Odstraní odměnu z `game_board`. Tzn. nastaví dané pole na 0 a v HTML odebere obrázek odměny.
 
+
+# NPC
+Nyní zkusíme do našeho programu přidat NPC (non-playable character), který bude hráče pronásledovat. K tomu potřebujeme několik změn v našem programu:
+1. Proměnné, které budou udávat pozici NPC v programu.
+2. Funkci, která se bude spouštět v pravidelných intervalech a která bude posunovat pozici NPC.
+3. Funkci, která bude schopna v našem `game_board` nalézt nejkratší cestu od hráče k NPC.
+
+## Spouštění v pravidelných intervalech
+
+Vytvořte si funkci `posunNPC`, kde bude docházet k posunu NPC a také se bude kontrolovat, zda-li NPC není na stejném poli s hráčem. Tato funkce se bude v JavaScriptu volat spomocí funkce `setInterval`. Takže to bude vypadat nějak takto:
+```JavaScript
+function posunNPC() { 
+  // dopiště vlastní logiku
+  console.log("Function executed every second."); 
+} 
+setInterval(myFunction, 1000); // spouštěno každou sekundu
+```
+
+## Hledání nejkratší cesty
+Pro hledání nejkratší cesty využijeme algoritmus breath first search (BFS). Názorné vysvětlení algoritmu je možné vidět třeba [zde](https://www.youtube.com/watch?v=T_m27bhVQQQ&t=131s).
