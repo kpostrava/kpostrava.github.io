@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "board game"
+title:  "Board game"
 ---
 # Board game
 

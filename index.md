@@ -6,9 +6,9 @@ title: "Kroužek programování "
 ![kids](images/codeorg.png)
 
 [Katedra informatiky na VŠB-TUO](https://katedrainformatiky.cz/) pořádá kroužek programování, který je veden zábavnou formou a děti si vyzkoušejí základy tvorby programů v přívětivém grafickém rozhraní [code.org](http://code.org/). Kroužek je veden zkušenými pedagogy z Katedry informatiky a studenty pod jejich vedením. Každoročně jsou pořádány tři kroužky:
-- první pro začátečníky, zaměžený na základy algoritmizace a seznámení s JavaScriptem, 
-- druhý pro mírně pokročilé studenty, kde již přecházíme na HTML+JavaScript
-- a třetí je kroužek pro pokročilejší, kde se studenti seznámí s jazykem Java, vývojovým prostředím Eclipse (volně dostupné z [eclipse.org](https://www.eclipse.org/)) a základy Objektově Orientovaného programování.
+- první pro začátečníky, zaměřený na základy algoritmizace a seznámení s programovacím jazykem JavaScript, 
+- druhý pro mírně pokročilé studenty, kde již v průběhu roku přecházíme na HTML+JavaScript
+- a třetí je kroužek opět pro mírně pokročilé, kde se studenti seznámí s jazykem Java, vývojovým prostředím Eclipse (volně dostupné z [eclipse.org](https://www.eclipse.org/)) a základy Objektově Orientovaného programování.
 
 Všechny kroužky jsou vhodné pro děti ve věku 10-18 let.
 
