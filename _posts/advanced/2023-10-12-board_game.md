@@ -45,4 +45,7 @@ setInterval(myFunction, 1000); // spouštěno každou sekundu
 ```
 
 ## Hledání nejkratší cesty
-Pro hledání nejkratší cesty využijeme algoritmus breath first search (BFS). Názorné vysvětlení algoritmu je možné vidět třeba [zde](https://www.youtube.com/watch?v=T_m27bhVQQQ&t=131s).
+Pro hledání nejkratší cesty využijeme algoritmus breath first search (BFS). Názorné vysvětlení algoritmu je možné vidět třeba [zde](https://www.youtube.com/watch?v=T_m27bhVQQQ&t=131s). V lorem ipsum týmu na Repl.it je nyní program, který hledá nejkratší cestu v bludišti. Toto hledání realizuje funkce `shortestPathSearch`. Zkusme se podrobně podívat na jednotlivé parametry funkce:
+- `game_board` - dvourozměrné pole, tak jak jej máme v předchozím programu.
+- `xp`, `yp` - souřadnice hráče
+- `x_npc`, `y_npc` - souřadnice NPC
