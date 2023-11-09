@@ -50,4 +50,4 @@ Pro hledání nejkratší cesty využijeme algoritmus breath first search (BFS).
 - `xp`, `yp` - souřadnice hráče
 - `x_npc`, `y_npc` - souřadnice NPC
 
-[Funkce](https://gist.github.com/RadimBaca/aee7196ba05f3d214862f99d8e10950b)
+[Funkce shortestPathSearch](https://gist.github.com/RadimBaca/aee7196ba05f3d214862f99d8e10950b)
