@@ -50,4 +50,7 @@ Pro hledání nejkratší cesty využijeme algoritmus breath first search (BFS).
 - `xp`, `yp` - souřadnice hráče
 - `x_npc`, `y_npc` - souřadnice NPC
 
-[Funkce shortestPathSearch](https://gist.github.com/RadimBaca/aee7196ba05f3d214862f99d8e10950b)
+<script src="https://gist.github.com/RadimBaca/aee7196ba05f3d214862f99d8e10950b.js"></script>
+
+## Import do souboru
+Pro zpřehlednění programu můžeme hledání nejkratší cesty (funkci shortestPathSearch) přenést do samostatného souboru a v index.js ji naimportovat. Příklad toho jak se to v JavaScriptu dělá můžete vidět v následující [otázce na StackOverflow](https://stackoverflow.com/questions/56336729/how-can-i-import-functions-from-an-other-javascript-file) popřípadě si můžete přečíst delší vysvětlení exportu a importu v JavaScriptu [zde](https://javascript.info/import-export).
