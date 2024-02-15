@@ -62,3 +62,5 @@ Pro zpřehlednění programu můžeme hledání nejkratší cesty (funkci shorte
 - [Vinca](https://b749510d-4acf-447b-ad59-4263eeec8acf-00-yzju7i5noigg.spock.replit.dev/)
 - [Štěpán](https://d52cf779-cb95-4456-855b-d14e5fb2909e-00-22du8e5dvf147.spock.replit.dev/)
 - [Dominik](https://7bf0ad76-008d-44a5-9f2e-45f1186bb280-00-1n6rw7vbrqagr.spock.replit.dev/)
+
+[Formulář pro hodnocení](https://docs.google.com/forms/d/e/1FAIpQLSfsBAm0frYEt1yUAt_QfjHXDDR4fXaRNIVSg_iLYyodVk58Yg/viewform?usp=sf_link) výsledné aplikace.
