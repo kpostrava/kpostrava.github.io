@@ -57,7 +57,7 @@ Pro zpřehlednění programu můžeme hledání nejkratší cesty (funkci shorte
 
 # Projects
 
-- [Olaf](https://a9832060-26c8-4de7-ae72-72d48ee97a2a-00-2trpl9iqhy9de.kirk.replit.dev/)
+- [Oli](https://a9832060-26c8-4de7-ae72-72d48ee97a2a-00-2trpl9iqhy9de.kirk.repl.co/)
 - [Marek](https://67bddb21-684e-459a-bc84-700143735516-00-2z1jsm83dcxin.picard.replit.dev/)
 - [Vinca](https://b749510d-4acf-447b-ad59-4263eeec8acf-00-yzju7i5noigg.spock.replit.dev/)
 - [Štěpán](https://d52cf779-cb95-4456-855b-d14e5fb2909e-00-22du8e5dvf147.spock.replit.dev/)
