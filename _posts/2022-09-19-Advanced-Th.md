@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Pokročilí čtvrtek"
---- 
+title: "Pokročilí čtvrtek"
+---
 
 ## Úvod
 
@@ -39,6 +39,7 @@ Každý ovládací prvek má své unikátní jméno. Na následujícím obrázku
 ### getText - načtení hodnoty
 
 Jak tedy načteme textovou hodnotu ovládacího prvku do proměnné? Pro načtení textové hodnoty textboxu `text_input1` do proměnné `moje_promenna` napíšeme:
+
 ```javascript
 var moje_promenna = getText("text_input1");
 ```
@@ -46,17 +47,19 @@ var moje_promenna = getText("text_input1");
 ### setText - nastavení hodnoty
 
 Podobně potřebujeme občas hodnoty ovládacích prvků nastavovat. Nyní máme v proměnné `moje_promenna` hodnotu načtenou z textboxu. Nyní hodnotu nastavíme do popisky `label_text`:
+
 ```javascript
 setText("label_text", moje_promenna);
 ```
 
 ### onEvent - reakce na událost
 
-V mnoha situacích potřebujeme ještě reagovat na události. Nejobvykleji se jedná o vstupy od uživatele jako je kliknutí na tlačítko, nebo zadání hodnoty. Reakce na stisknutí tlačítka `button_ok`, kde zkopírujeme hodnotu zadanou v text boxu do popisky  `label_text` bude vypadat následovně:
+V mnoha situacích potřebujeme ještě reagovat na události. Nejobvykleji se jedná o vstupy od uživatele jako je kliknutí na tlačítko, nebo zadání hodnoty. Reakce na stisknutí tlačítka `button_ok`, kde zkopírujeme hodnotu zadanou v text boxu do popisky `label_text` bude vypadat následovně:
+
 ```javascript
-onEvent("screen1", "click", function( ) {
-	var moje_promenna = getText("text_input1");
-	setText("label_text", moje_promenna);
+onEvent("screen1", "click", function () {
+  var moje_promenna = getText("text_input1");
+  setText("label_text", moje_promenna);
 });
 ```
 
@@ -65,11 +68,10 @@ onEvent("screen1", "click", function( ) {
 - [Úniková hra](https://studio.code.org/projects/applab/E80ueH72KM8WSqk1bvPrdwk1IPv1J36EEW_Xhum__Mo "Unikova hra")
 - [Úniková hra (autor Matěj Chamrád)](https://studio.code.org/projects/applab/JLlNAmd3VcM0ItZXYBR-TCnfL_wLoTK52etVfogTHfQ "Unikova hra (autor Matěj Chamrád)")
 - [Malá nábosilka](https://studio.code.org/projects/applab/-hRWjKGg9Q8nzRiqLY1XzC_WWRawVgYgtxjtjDDbiR4 "Malá nábosilka")
-- [Memory challenge]({% post_url advanced/2022-12-08-memory_challenge %})
-- [Dungeon]({% post_url advanced/2023-2-2-dungeon %})
 - [JSON](https://bit.ly/3eTLeYH)
 
 ## Dungeon hra vytvořená studenty kroužku
+
 V rámci kroužku studenti vytvořili svou varinatu hry Dungeon. Pokud máte zájem vyzkoušejte jednotlivé varianty této hry a následně [zde vložte své hodnocení jednotlivých verzí](https://forms.gle/9opLdAvNL8XhRCX67):
 
 - [Štěpán](https://dungeon-blbeceknakoni.lorem-ipsum-team.repl.co/)

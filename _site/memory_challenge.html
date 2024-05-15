@@ -1,0 +1,166 @@
+
+
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8">
+    <style>#ul_top_hypers li {
+    display: inline;
+}</style>
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Memory challenge | Kroužek programování</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Memory challenge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Program “Memory challenge”" />
+<meta property="og:description" content="Program “Memory challenge”" />
+<link rel="canonical" href="http://localhost:4000/memory_challenge.html" />
+<meta property="og:url" content="http://localhost:4000/memory_challenge.html" />
+<meta property="og:site_name" content="Kroužek programování" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-02-02T00:00:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Memory challenge" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/memory_challenge.html","dateModified":"2023-02-02T00:00:00+01:00","datePublished":"2023-02-02T00:00:00+01:00","description":"Program “Memory challenge”","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/memory_challenge.html"},"headline":"Memory challenge","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=62f491301ed82ff8002850734b9b1c697f096686">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+<!-- 
+ -->
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">Memory challenge</h1>
+      <h2 class="project-tagline">Stránky kroužku programování na VŠB-Technická univerzita Ostrava</h2>
+
+      <a href="http://localhost:4000" class="btn">Domů</a>
+              <a class="btn" href="/Projects.html">
+                Zadání
+              </a>
+              <a class="btn" href="/History.html">
+                Archiv
+              </a><!-- 
+        <a href="https://github.com/kpostrava/kpostrava.github.io" class="btn">View on GitHub</a>
+       -->
+    </header>
+
+    <main>
+
+      <div class="container">
+      <nav class="side-nav">
+                <a href="/LoremIpsum_1600.html">
+                  Lorem Ipsum, čt 16:00
+                </a>
+                <a href="/java-Th.html">
+                  Java
+                </a>
+                <a href="/Beginners_1600.html">
+                  Začátečníci, čt 16:00
+                </a>
+                <a href="/Beginners_1500.html">
+                  Začátečníci, pá 15:00
+                </a>
+                <a href="/Beginners_1430.html">
+                  Začátečníci, čt 14:30
+                </a>
+                <a href="/Advanced_1600.html">
+                  Pokročilí, čt 16:00
+                </a>
+                <a href="/Advanced_1430.html">
+                  Pokročilí, čt 14:30
+                </a></nav>
+
+      <div id="content" class="main-content" role="main" style="width: 100%;">
+      <h1 id="program-memory-challenge">Program “Memory challenge”</h1>
+
+<ol>
+  <li><a href="https://studio.code.org/projects/applab/mbu_rC06TSKqfiraKegwSNAtKuePJ-c8Ivh79xyE7-I">Code.org</a> verze hry</li>
+</ol>
+
+<p>Hra probíhá v kolech a funguje následujícím způsobem:</p>
+<ol>
+  <li>Hráč si má za pět sekund zapamatovat pět čísel.</li>
+  <li>Pak je má vepsat do textboxu: 
+  a. Pokud uhodne, tak další kolo si bude muset zkusit zapamatovat šest čísel za šest sekund.
+  b. Pokud neuspěje, tak se mu ukážou čtyři čísla na čtyři sekundy.</li>
+  <li>Hríč vyhraje, pokud si v pěti kolech zapamatuje číslo správně.</li>
+  <li>Hráč prohraje pokud dříve pětkrát číslo napíše špatně.</li>
+</ol>
+
+<p>Tzn. hra má maximálně devět kol, protože pak už hráč musí buď prohrát nebo vyhrát.</p>
+
+<h2 id="čekání">Čekání</h2>
+<p>V programu jsou využity dva triky, které si zaslouží trochu okomentovat. První z nich je čekání. JavaScript neobsahuje přímo funkci <code class="language-plaintext highlighter-rouge">sleep</code>, takže je nutné si ji naimplementovat. Využili jsme <code class="language-plaintext highlighter-rouge">sleep</code> funkci ze <a href="https://stackoverflow.com/a/9748670/2091247">StackOverflow</a>:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">sleep</span><span class="p">(</span><span class="nx">delay</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">start</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">().</span><span class="nx">getTime</span><span class="p">();</span>
+    <span class="k">while</span> <span class="p">(</span><span class="k">new</span> <span class="nb">Date</span><span class="p">().</span><span class="nx">getTime</span><span class="p">()</span> <span class="o">&lt;</span> <span class="nx">start</span> <span class="o">+</span> <span class="nx">delay</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>Tuto funkci pak v kódu můžete zavolat třeba takto:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Chtel jsem neco rict, ale nemuzu si vzpomenout ...</span><span class="dl">"</span><span class="p">);</span>
+<span class="nx">sleep</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Uz vim! Krouzek programovani je skvely!</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+<p>Takto bude JavaScript mezi oběma výpisy do konzole chvilku váhat. Přesněji mezi výpisy bude čekat 2 sekundy.</p>
+
+<h2 id="generování-čísel">Generování čísel</h2>
+<p>V programu potřebujeme generovat náhodné čísla s požadovaným počtem číslic. Požadovaný počet číslic nám udává proměnná <code class="language-plaintext highlighter-rouge">digitNumber</code>. V podstatě existují dva přístupy k tomuto problému. První iterativní algoritmus generuje v cyklu vždy jednu číslici, kterou přičteme k výslednému číslu a následně násobíme desíti.</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="nx">digitNumber</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">number</span> <span class="o">=</span> <span class="nx">number</span> <span class="o">*</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="nx">number</span> <span class="o">=</span> <span class="nx">number</span> <span class="o">+</span> <span class="nx">randomNumber</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">9</span><span class="p">);</span>
+  <span class="p">}</span>  
+</code></pre></div></div>
+<p>Druhý přístup je vypočítat interval, ze kterého se mají čísla vybírat. Kupříkladu pro dvou ciferné čísla budeme náhodně vybírat čísla z intervalu 10 - 99. Obě strany intervalu se dají vypočítat jako 10^1 až 10^2 - 1. V JavaScriptu pak generování čísla bude probíhat takto:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">number</span> <span class="o">=</span> <span class="nx">randomNumber</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">pow</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="nx">digitNumber</span><span class="p">),</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">pow</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="nx">digitNumber</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+</code></pre></div></div>
+
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+  </footer>
+
+    </main>
+  </body>
+</html>
+<style>
+  .container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  #content{
+    border-left: 1px solid #eee;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  nav a {
+    margin-top: 1rem;
+  }
+</style>

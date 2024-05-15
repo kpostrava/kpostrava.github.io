@@ -1,0 +1,204 @@
+
+
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8">
+    <style>#ul_top_hypers li {
+    display: inline;
+}</style>
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Pokročilí čtvrtek | Kroužek programování</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Pokročilí čtvrtek" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Úvod" />
+<meta property="og:description" content="Úvod" />
+<link rel="canonical" href="http://localhost:4000/Advanced-Th.html" />
+<meta property="og:url" content="http://localhost:4000/Advanced-Th.html" />
+<meta property="og:site_name" content="Kroužek programování" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-19T00:00:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Pokročilí čtvrtek" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/Advanced-Th.html","dateModified":"2022-09-19T00:00:00+02:00","datePublished":"2022-09-19T00:00:00+02:00","description":"Úvod","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Advanced-Th.html"},"headline":"Pokročilí čtvrtek","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=62f491301ed82ff8002850734b9b1c697f096686">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+<!-- 
+ -->
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">Pokročilí čtvrtek</h1>
+      <h2 class="project-tagline">Stránky kroužku programování na VŠB-Technická univerzita Ostrava</h2>
+
+      <a href="http://localhost:4000" class="btn">Domů</a>
+              <a class="btn" href="/Projects.html">
+                Zadání
+              </a>
+              <a class="btn" href="/History.html">
+                Archiv
+              </a><!-- 
+        <a href="https://github.com/kpostrava/kpostrava.github.io" class="btn">View on GitHub</a>
+       -->
+    </header>
+
+    <main>
+
+      <div class="container">
+      <nav class="side-nav">
+                <a href="/LoremIpsum_1600.html">
+                  Lorem Ipsum, čt 16:00
+                </a>
+                <a href="/java-Th.html">
+                  Java
+                </a>
+                <a href="/Beginners_1600.html">
+                  Začátečníci, čt 16:00
+                </a>
+                <a href="/Beginners_1500.html">
+                  Začátečníci, pá 15:00
+                </a>
+                <a href="/Beginners_1430.html">
+                  Začátečníci, čt 14:30
+                </a>
+                <a href="/Advanced_1600.html">
+                  Pokročilí, čt 16:00
+                </a>
+                <a href="/Advanced_1430.html">
+                  Pokročilí, čt 14:30
+                </a></nav>
+
+      <div id="content" class="main-content" role="main" style="width: 100%;">
+      <h2 id="úvod">Úvod</h2>
+
+<h3 id="zakladni-informace">Zakladni informace</h3>
+
+<p>Lektor: Radim Bača</p>
+
+<p>Classroom code (section): DGQYYY</p>
+
+<p>Místnost: EB405</p>
+
+<p>Čas: 14:30</p>
+
+<h3 id="popis-kroužku">Popis kroužku</h3>
+
+<p>Tento kroužek je koncipován jako navazující na kroužek pro začátečníky. Předpokládá se, že účastníci chápou a umějí používat základní stavební bloky programovacích jazyků jako:</p>
+
+<ul>
+  <li>Opakované provedení (cyklus)</li>
+  <li>Podmíněné provedení (if-else)</li>
+  <li>Funkce</li>
+  <li>Proměnná (typu integer a string)</li>
+</ul>
+
+<p>V prvním půl roce znalost těchto konceptů ještě dále prohloubíme a zejména uplatníme při tvorbě aplikací s jednoduchými ovládacími prvky (textbox, tlačítko, dropdown). V druhé polovině roku, pak začneme pracovat s polem, což nám umožní ještě více rozšířit paletu aplikací.</p>
+
+<h2 id="práce-s-ovládacímí-prvky">Práce s ovládacímí prvky</h2>
+
+<p>Každý ovládací prvek má své unikátní jméno. Na následujícím obrázku vidíme aplikaci se třemi ovládacími prvky:</p>
+
+<p><img src="images/applab_basic.png" alt="kids" /></p>
+
+<ol>
+  <li>TextBox - jak vidíme na obrázku jméno textboxu je <code class="language-plaintext highlighter-rouge">text_input1</code>. Jméno se objeví, když v AppLabu najedeme na ovládací prvek myší.</li>
+  <li>Tlačítko - jeho jméno je <code class="language-plaintext highlighter-rouge">button_ok</code>.</li>
+  <li>Label - popiska s textem “text”, kde jméno ovládacího prvku je <code class="language-plaintext highlighter-rouge">label_text</code>.</li>
+</ol>
+
+<h3 id="gettext---načtení-hodnoty">getText - načtení hodnoty</h3>
+
+<p>Jak tedy načteme textovou hodnotu ovládacího prvku do proměnné? Pro načtení textové hodnoty textboxu <code class="language-plaintext highlighter-rouge">text_input1</code> do proměnné <code class="language-plaintext highlighter-rouge">moje_promenna</code> napíšeme:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">moje_promenna</span> <span class="o">=</span> <span class="nx">getText</span><span class="p">(</span><span class="dl">"</span><span class="s2">text_input1</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="settext---nastavení-hodnoty">setText - nastavení hodnoty</h3>
+
+<p>Podobně potřebujeme občas hodnoty ovládacích prvků nastavovat. Nyní máme v proměnné <code class="language-plaintext highlighter-rouge">moje_promenna</code> hodnotu načtenou z textboxu. Nyní hodnotu nastavíme do popisky <code class="language-plaintext highlighter-rouge">label_text</code>:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">setText</span><span class="p">(</span><span class="dl">"</span><span class="s2">label_text</span><span class="dl">"</span><span class="p">,</span> <span class="nx">moje_promenna</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="onevent---reakce-na-událost">onEvent - reakce na událost</h3>
+
+<p>V mnoha situacích potřebujeme ještě reagovat na události. Nejobvykleji se jedná o vstupy od uživatele jako je kliknutí na tlačítko, nebo zadání hodnoty. Reakce na stisknutí tlačítka <code class="language-plaintext highlighter-rouge">button_ok</code>, kde zkopírujeme hodnotu zadanou v text boxu do popisky <code class="language-plaintext highlighter-rouge">label_text</code> bude vypadat následovně:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">onEvent</span><span class="p">(</span><span class="dl">"</span><span class="s2">screen1</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">moje_promenna</span> <span class="o">=</span> <span class="nx">getText</span><span class="p">(</span><span class="dl">"</span><span class="s2">text_input1</span><span class="dl">"</span><span class="p">);</span>
+  <span class="nx">setText</span><span class="p">(</span><span class="dl">"</span><span class="s2">label_text</span><span class="dl">"</span><span class="p">,</span> <span class="nx">moje_promenna</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h2 id="rozličné-zajímavé-úkoly">Rozličné zajímavé úkoly</h2>
+
+<ul>
+  <li><a href="https://studio.code.org/projects/applab/E80ueH72KM8WSqk1bvPrdwk1IPv1J36EEW_Xhum__Mo" title="Unikova hra">Úniková hra</a></li>
+  <li><a href="https://studio.code.org/projects/applab/JLlNAmd3VcM0ItZXYBR-TCnfL_wLoTK52etVfogTHfQ" title="Unikova hra (autor Matěj Chamrád)">Úniková hra (autor Matěj Chamrád)</a></li>
+  <li><a href="https://studio.code.org/projects/applab/-hRWjKGg9Q8nzRiqLY1XzC_WWRawVgYgtxjtjDDbiR4" title="Malá nábosilka">Malá nábosilka</a></li>
+  <li><a href="https://bit.ly/3eTLeYH">JSON</a></li>
+</ul>
+
+<h2 id="dungeon-hra-vytvořená-studenty-kroužku">Dungeon hra vytvořená studenty kroužku</h2>
+
+<p>V rámci kroužku studenti vytvořili svou varinatu hry Dungeon. Pokud máte zájem vyzkoušejte jednotlivé varianty této hry a následně <a href="https://forms.gle/9opLdAvNL8XhRCX67">zde vložte své hodnocení jednotlivých verzí</a>:</p>
+
+<ul>
+  <li><a href="https://dungeon-blbeceknakoni.lorem-ipsum-team.repl.co/">Štěpán</a></li>
+  <li><a href="https://dungeon-misa2012.lorem-ipsum-team.repl.co/">Michael</a></li>
+  <li><a href="https://dungeon-marekhornik.lorem-ipsum-team.repl.co/">Marek</a></li>
+  <li><a href="https://dungeon-kanystrbenzinu.lorem-ipsum-team.repl.co/">Oli</a></li>
+  <li><a href="https://dungeon-artek0027.lorem-ipsum-team.repl.co/">Artek</a></li>
+</ul>
+
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+  </footer>
+
+    </main>
+  </body>
+</html>
+<style>
+  .container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  #content{
+    border-left: 1px solid #eee;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  nav a {
+    margin-top: 1rem;
+  }
+</style>
