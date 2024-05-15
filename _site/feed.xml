@@ -1,757 +1,139 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-15T11:06:27+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kroužek programování</title><subtitle>Stránky kroužku programování na VŠB-Technická univerzita Ostrava</subtitle><entry><title type="html">Zadání</title><link href="http://localhost:4000/Projects.html" rel="alternate" type="text/html" title="Zadání" /><published>2024-05-15T00:00:00+02:00</published><updated>2024-05-15T00:00:00+02:00</updated><id>http://localhost:4000/Projects</id><content type="html" xml:base="http://localhost:4000/Projects.html">&lt;h3 id=&quot;prostředí-codeorg&quot;&gt;Prostředí code.org&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-15T12:54:47+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kroužek programování</title><subtitle>Stránky kroužku programování na VŠB-Technická univerzita Ostrava</subtitle><entry><title type="html">Pokročilí čtvrtek</title><link href="http://localhost:4000/Advanced-Th.html" rel="alternate" type="text/html" title="Pokročilí čtvrtek" /><published>2022-09-19T00:00:00+02:00</published><updated>2022-09-19T00:00:00+02:00</updated><id>http://localhost:4000/Advanced-Th</id><content type="html" xml:base="http://localhost:4000/Advanced-Th.html">&lt;h2 id=&quot;úvod&quot;&gt;Úvod&lt;/h2&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/esc.html&quot;&gt;Únikovka&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/dungeon_codeorg.html&quot;&gt;Dungeon-codeorg&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;html-css-js&quot;&gt;HTML, CSS, JS&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/memory_challenge.html&quot;&gt;Memory challenge&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/dungeon.html&quot;&gt;Dungeon&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/board_game.html&quot;&gt;Board Game&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/git.html&quot;&gt;Git&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/chat.html&quot;&gt;Chat aplikace (Sockets.io)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/chat_room.html&quot;&gt;Chat rooms (Sockets.io)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/classes.html&quot;&gt;Classes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/TNKI.html&quot;&gt;TNKI&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="bar" /><summary type="html">Prostředí code.org</summary></entry><entry><title type="html">Tnki</title><link href="http://localhost:4000/TNKI.html" rel="alternate" type="text/html" title="Tnki" /><published>2024-05-14T00:00:00+02:00</published><updated>2024-05-14T00:00:00+02:00</updated><id>http://localhost:4000/TNKI</id><content type="html" xml:base="http://localhost:4000/TNKI.html">&lt;h1 id=&quot;tnki&quot;&gt;TNKI&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;images/logo.png&quot; alt=&quot;Logo&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;images/screen.png&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;TNKI je real-time multiplayerová hra založená na websocketech. Avšak, protože zábava je v programování, a ne ve hraní hry, dostanete pouze repozitář se základní funkcionalitou a bude na vás hru dokončit. Hra každého z vás může být unikátní a obsahovat různé herní mechaniky.&lt;/p&gt;
-
-&lt;p&gt;Repozitář: &lt;a href=&quot;https://github.com/kpostrava/tnki&quot;&gt;https://github.com/kpostrava/tnki&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;💡 Pro snadnější oriantaci v kódu si do vscode nainstaluje rozšíření “better comments”: &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments&quot;&gt;https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;popis-kódu&quot;&gt;Popis kódu&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Datová struktura asociativní pole (hashmap)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;map_id_room&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;aside&gt;
-💡 Map() = asociativní pole
-
-&lt;/aside&gt;
-
-&lt;p&gt;V asociativním poli &lt;em&gt;map_id_room&lt;/em&gt; používáme id tanku jako klíč a název místnosti jako hodnotu. Při každém připojení tanku do roomky zároveň do tohoto asociativního pole přidáme nový záznam.&lt;/p&gt;
-
-&lt;p&gt;Tímto máme zajištěno, že kdykoliv v programu můžeme okamžitě zjistit v jaké místosti se tank nachází. Naopak při odpojení tanku je důležité, abyste tank z tohoto pole smazali!&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;map_id_room&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;id1&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;místnost1&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;id2&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;místnost2&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;map_id_room&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;id3&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;místnost3&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//přidání záznamu s klíčem &quot;id3&quot;&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;map_id_room&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;id2&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//načtení záznamu podle klíče - vypíše &quot;místnost2&quot;&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;map_id_room&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;id1&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//smazání záznamu s klíčem &quot;id1&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Příklad zapsání a získání dat z asociativního pole.&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;map_key_value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;ArrowUp&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}],&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;ArrowLeft&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}],&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;ArrowDown&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}],&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;ArrowRight&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}],&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Dalším příkladem asociativního pole je &lt;em&gt;map_key_value. Umožňuje nám najít podle názvu klávesy koeficienty pro pohyb po jednotlivých osách.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Server:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Třídy:&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Room&lt;/em&gt; - Jeden server může hostovat více her součásně, každá hra má svou instanci třídy &lt;em&gt;Room.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Každá instance má svůj unikátní identifikátor - &lt;em&gt;room_name,&lt;/em&gt; který se následně používá v asociativních polích pro její identifikaci.&lt;/p&gt;
-
-&lt;p&gt;Konstruktor potřebuje &lt;em&gt;session_id&lt;/em&gt; tanku, který místost vytvořil. &lt;em&gt;Tank který místnost vytvořil, maximální počet hráčů, název místnosti a herní mapu.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Třída Room také obsahuje vlastní asociativní pole “tanks”. Toto pole slouží k rychlému přiřazení session_id ke konkrétní instance třídy Tank.&lt;/p&gt;
-
-&lt;p&gt;Maximální počet hráčů a jméno místnosti zadává uživatel do formuláře na domovské stránce. Session_id pocházi ze socketio. &lt;em&gt;tank&lt;/em&gt; je instance třídy &lt;em&gt;Tank&lt;/em&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Room&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;started&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;tanks&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-  &lt;span class=&quot;kd&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;session_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tank&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;max_players&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;room_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;game_map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;admin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;session_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;max_players&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;max_players&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;room_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;room_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;game_map&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;game_map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tanks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;session_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tank&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;map_id_room&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;session_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;room_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;session_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tank&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tanks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;session_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tank&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;map_id_room&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;session_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;room_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;nx&quot;&gt;tanks_length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tanks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;em&gt;Tank&lt;/em&gt; - Každý hráč má svou instanci. Všechny tanky musí patřit nějaké instanci třídy Room.&lt;/p&gt;
-
-&lt;p&gt;Konstruktor potřebuje:&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;index&lt;/em&gt; tanku - získáme voláním tanks_length() na instanci &lt;em&gt;Room&lt;/em&gt;, do které daný tank patří.&lt;/p&gt;
-
-&lt;p&gt;player_name - zadává uživatel do formuláře na domovské stránce&lt;/p&gt;
-
-&lt;p&gt;session_id - pochází ze socketio&lt;/p&gt;
-
-&lt;p&gt;Navíc každá instance třídy tank obsahuje informace o aktuální poloze tanku a jeho barvu.&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Tank&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;session_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;start_positions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;start_positions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;colors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;session_id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;session_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;nx&quot;&gt;validate_move&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
-
-  &lt;span class=&quot;nx&quot;&gt;move&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
-
-  &lt;span class=&quot;nx&quot;&gt;shoot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;websockety&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Veškerá komunikace klient/server je zprostředokována pomocí websocket.&lt;/p&gt;
-
-&lt;p&gt;Například při kliknutí na talčitko create room na domovské stránce. Se emitne event.&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;emit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;create_room&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;room_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;room_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;max_players&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;max_players&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;player_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Server na něj umí reagovat:&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;io&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;connection&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;create_room&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-    &lt;span class=&quot;nx&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;join_room&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Stejným způsobem to funguje i opačným směrem.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Klient&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Změna obrazovek&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Pro snadné přepínání mezi obrazovkami - home, lobby, game, máme implementovanou jednoduchou funkci:&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;screens&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;lobby&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;game&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;set_screen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;visible_screen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;screens&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hidden_screen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hidden_screen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;visible_screen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hidden_screen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hidden_screen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;classList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;hidden&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;visible_screen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;classList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;hidden&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Jako argument posíláme název obrazovky.&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;set_screen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;lobby&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Můžeme takto jednoduše přepínat obrazovky. Pokud chcete přidat vlastí obrazovku stačí jí jen přidat její id do pole a přidat jí do html.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Uživatelské vstupy&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;V základu aplikace používá šipky pro pohyb, shift pro rotaci a mezerník pro střelbu. Pokud je některá z těchto kláves stisknuta, informujeme o tom server. Zároveň voláme metodu &lt;em&gt;preventDefault(),&lt;/em&gt; která zabrání například nechtěnému posunu obrazovky v důsledku stisknutí šipky dolů.&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;move_keys&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;ArrowUp&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;ArrowLeft&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;ArrowDown&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;ArrowRight&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-
-&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onkeydown&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;move_keys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;includes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;preventDefault&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;emit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;update_move&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;shiftKey&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;c1&quot;&gt;//? Líbí se ti střelba při klávese &quot;space&quot;? Pokud ne, můžeš ji libovolně měnit!&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;code&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Space&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;preventDefault&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;emit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;update_shoot&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Indikátory&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Slouží k ukazování hráčů ve hře, jejich životů a nábojů. Při změně stavu nábojů, či životů je nutná jejich ruční aktualizace. Pomůže nám k tomu funkce set indicator:&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;set_indicator&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;indicator&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`#indicator_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; .&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;indicator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;innerHTML&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;indicator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;innerHTML&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;`&amp;lt;img src=&quot;assets/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.png&quot; class=&quot;w-8 h-8&quot; /&amp;gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Aktualizaci pak můžeme udělat velmi snadno.&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;set_indicator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tank&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;ammo&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;set_indicator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tank&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;health&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;aside&gt;
-💡 Index identifikátoru je shodný s indexem tanku o kterém informuje
-
-&lt;/aside&gt;
-
-&lt;h2 id=&quot;úkoly&quot;&gt;Úkoly&lt;/h2&gt;
-
-&lt;aside&gt;
-💡 Veškerá logika je řešena na straně serveru. Klient pouze vykresluje získaná data z eventu a emituje event při uživatelském vstupu.
-
-&lt;/aside&gt;
-
-&lt;p&gt;&lt;strong&gt;Server:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Změnit mapu (* generovat novou / upravenou pro každou hru)&lt;/li&gt;
-  &lt;li&gt;Implementovat kolize -
-    &lt;ul&gt;
-      &lt;li&gt;S okraji mapy (*dynamicky v závislosti na velikosti mapy)&lt;/li&gt;
-      &lt;li&gt;S barikádami&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Přidat třídě tank potřebné atributy - životy, náboje, &lt;strong&gt;směr&lt;/strong&gt; (*vlastní atributy pro dalši herní mechaniky)&lt;/li&gt;
-  &lt;li&gt;Ověření dostatku nábojů při střelbě&lt;/li&gt;
-  &lt;li&gt;Trajektorie střely ve směru tanku&lt;/li&gt;
-  &lt;li&gt;Detekce zásahu tanku střelou&lt;/li&gt;
-  &lt;li&gt;Ubrání života při zásahu&lt;/li&gt;
-  &lt;li&gt;Ubrání náboje při střelbě&lt;/li&gt;
-  &lt;li&gt;Domplňování munice všech hráčů v pravidelných intervalech&lt;/li&gt;
-  &lt;li&gt;Stisknutím šipky společně s klávesou &lt;em&gt;shift rotovat tank&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;Logika odpojování hráčů&lt;/li&gt;
-  &lt;li&gt;Oznámení výhry / prohry&lt;/li&gt;
-  &lt;li&gt;Validace vstupů pro udáje nutné k vytvoření / připojení do místosti&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Klient&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Vlastní textury&lt;/li&gt;
-  &lt;li&gt;Měnit texturu / rotaci textury na základně atributu směru ⇒ tank se natáčí ve směru pohybu&lt;/li&gt;
-  &lt;li&gt;Textura výbuchu při zasažení hráče&lt;/li&gt;
-  &lt;li&gt;Tlačítko pro odpojení z místnosti v čekacím lobby&lt;/li&gt;
-  &lt;li&gt;Reakce na odpojení hráče ze hry (smrt, problém s připojením) - Skrýt jeho indetifikátor a odstranit ze seznamu hráčů&lt;/li&gt;
-  &lt;li&gt;Naimplementuj event handler, který aktualizuje stav nábojů na indetifikátorech&lt;/li&gt;
-  &lt;li&gt;Funkce pro reset stavu hry pro jejím skončení&lt;/li&gt;
-  &lt;li&gt;Oznámení výhru / prohry například na eventu &lt;em&gt;win / lost&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Bonusové&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;-&lt;/li&gt;
-  &lt;li&gt;Změň ovládání ze šipek a mezerníku například na wsad a enter&lt;/li&gt;
-  &lt;li&gt;Vymysli vlastní typ nábojů, například: splash demage, procházení barikádami, odrážení, více směrné&lt;/li&gt;
-  &lt;li&gt;Generuj na mapě náhodně bonusové životy / náboje&lt;/li&gt;
-  &lt;li&gt;Nastavení velikosti hracího pole adminem při vytváření roomky&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Vymysli něco nového!&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">TNKI</summary></entry><entry><title type="html">Classes</title><link href="http://localhost:4000/classes.html" rel="alternate" type="text/html" title="Classes" /><published>2024-04-04T00:00:00+02:00</published><updated>2024-04-04T00:00:00+02:00</updated><id>http://localhost:4000/classes</id><content type="html" xml:base="http://localhost:4000/classes.html">&lt;h1 id=&quot;nodejs&quot;&gt;NodeJS&lt;/h1&gt;
-&lt;p&gt;Dnes budeme pracovat s NodeJS. Tzn. vytvořte si lokální soubor &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tank.js&lt;/code&gt; do kterého si budete dávat kód. Program pak jednoduše spustíte přes příkazovou řádku:&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;node tank.js
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Pokud chcete, vytvořte si na Github prázdnou repository a soubor si případně umístěte.&lt;/p&gt;
-
-&lt;h1 id=&quot;tank-třída&quot;&gt;Tank třída&lt;/h1&gt;
-&lt;p&gt;V následující úloze se seznámíne s pojmem třída. Třída je užitečná pro organizaci kódu a jeho následné pochopení.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-JavaScript&quot;&gt;const colors = [&quot;red&quot;, &quot;green&quot;, &quot;blue&quot;, &quot;yellow&quot;];
-
-const min_x = 0
-const max_x = 10
-const min_y = 0
-const max_y = 10
-
-const start_positions = [
-    { x: min_x, y: min_y, dir: 2 },
-    { x: max_x, y: min_y, dir: 2 },
-    { x: min_x, y: max_y, dir: 0 },
-    { x: max_x, y: max_y, dir: 0 },
-];
-
-class Tank {
-    constructor(index, player_name) {
-        this.x = start_positions[index].x;
-        this.y = start_positions[index].y;
-        this.dir = start_positions[index].dir;
-        this.color = colors[index];
-        this.player_name = player_name;
-        this.index = index;
-    }
-    
-    print() {
-        console.log(&quot;Tank name: &quot; + this.player_name)
-        console.log(&quot;Position: (&quot; + this.x + &quot;, &quot; + this.y + &quot;)&quot;);
-    }
-};
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;V tomto kódu jsme definovali třídu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tank&lt;/code&gt;, která má:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Konstruktor&lt;/li&gt;
-  &lt;li&gt;Metodu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;print&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Jak konstruktor tak metodu si za chvilku vysvětlíme. Nejprve, ale začneme objektem.&lt;/p&gt;
-
-&lt;h2 id=&quot;objekt&quot;&gt;Objekt&lt;/h2&gt;
-&lt;p&gt;Třída sama o sobě nic nedělá. Můžeme o ní uvažovat jako o datovém typu (jako třeba číslo nebo řetězec). Do datového typu nic neuložíme. Abychom mohli s třídou pracovat, musíme vytvořit &lt;strong&gt;objekt&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-JavaScript&quot;&gt;tank1 = new Tank(0, &quot;Radim&quot;);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Takto jsme vytvořili objekt typu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tank&lt;/code&gt;, který se jmenuje &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tank1&lt;/code&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tank1&lt;/code&gt; má několik atributů:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;y&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dir&lt;/code&gt; - natočení tanku. 0 je nahoru, 1 doprava. 2 dolů a 3 doleva&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;color&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;player_name&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Slovo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;this&lt;/code&gt;, které vidíme v konstruktoru znamená něco jako “tento aktuální objekt”. Tzn. že když napíšeme &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;this.player_name = player_name;&lt;/code&gt;, tak u objektu (v našem případě &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tank1&lt;/code&gt;) nastavíme hodnotu atributu na hodnotu parametru &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;player_name&lt;/code&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Úkol 1 - Přidání atributů do třídy&lt;/strong&gt;
-Přidejte do třídy dva atributy: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lives&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ammo&lt;/code&gt;. Oba atributy budou na začátku nastaveny na hodnotu 3.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;konstruktor&quot;&gt;Konstruktor&lt;/h2&gt;
-&lt;p&gt;Jako první se u objektu vždy volá konstruktor. Jde o kód, který se provede automaticky. V našem kódu má konstruktor dva parametry &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index&lt;/code&gt; a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;player_name&lt;/code&gt;. Při vytváření objektu je tedy nutné tyto parametry předat, což jsme udělali (dali jsme tam hodnoty &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt; a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;Radim&quot;&lt;/code&gt;).&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Úkol 2 - Přidání parametrů konstruktoru&lt;/strong&gt;
-Přidejte do konstruktoru třídy atribut: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lives&lt;/code&gt;. Nastavte daným parametrem atribut &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lives&lt;/code&gt; u objektu.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Úkol 3 - Nový objekt&lt;/strong&gt;
-Vytvořte druhý objekt &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tank2&lt;/code&gt;, kde konstruktor bude mít parametry &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;Petr&quot;&lt;/code&gt; a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3&lt;/code&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;metoda-objektu&quot;&gt;Metoda objektu&lt;/h2&gt;
-&lt;p&gt;pokud chceme s objektem pracovat typicky se k tomu využívají metody jako je &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;print&lt;/code&gt;.  Metodu zavoláte pomocí následujícího kódu:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-JavaScript&quot;&gt;tank1.print();
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Úkol 4 - Rozšíření výpisu&lt;/strong&gt;
-Rozšiřte metodu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;print&lt;/code&gt;, aby vypsala i další atributy jako je otočení (atribut &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dir&lt;/code&gt;), barva, životy atd.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Úkol 5 - Nová metoda&lt;/strong&gt;
-Napište metodu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;move&lt;/code&gt;, která posune tank o jedno pole (podle toho kam je otočený). Metoda bude kontrolovat, jestli se tank nedostal mimo vyhrazené pole, které je definováno proměnnými &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;min_x&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;max_x&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;min_y&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;max_y&lt;/code&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name></name></author><category term="git" /><summary type="html">NodeJS Dnes budeme pracovat s NodeJS. Tzn. vytvořte si lokální soubor tank.js do kterého si budete dávat kód. Program pak jednoduše spustíte přes příkazovou řádku: node tank.js Pokud chcete, vytvořte si na Github prázdnou repository a soubor si případně umístěte.</summary></entry><entry><title type="html">Chat aplikace (Sockets.io + room)</title><link href="http://localhost:4000/chat_room.html" rel="alternate" type="text/html" title="Chat aplikace (Sockets.io + room)" /><published>2024-02-26T00:00:00+01:00</published><updated>2024-02-26T00:00:00+01:00</updated><id>http://localhost:4000/chat_room</id><content type="html" xml:base="http://localhost:4000/chat_room.html">&lt;h1 id=&quot;rozdělení-do-skupin-room&quot;&gt;Rozdělení do skupin (room)&lt;/h1&gt;
-&lt;p&gt;Cílem tohoto úkolu bude se seznámit s možností rozdělit klienty Socket.io do skupin. V Socket.io se této funkcionalitě říká &lt;a href=&quot;https://socket.io/docs/v3/rooms/&quot;&gt;rooms&lt;/a&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Úkol 1 - Přidat text box pro zadání room&lt;/strong&gt;
-Do &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;init div&lt;/code&gt; přidejte text box pro zadání jména &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;room&lt;/code&gt; (tzn. jméno skupiny ve které bude). Po stisku OK tlačítka se jméno &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;room&lt;/code&gt; pošle na server a na serveru přidejte klienta do skupiny &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;room&lt;/code&gt; s pomocí příkazu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;socket.join(room);&lt;/code&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Úkol 2 - Rozesílání zpráv pouze uživatelům v dané room&lt;/strong&gt;
-Klient nyní přidá hodnotu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;room&lt;/code&gt; do JSON zprávy po stisku SEND. Server pošle zprávu pouze na klienty v dané skupině s pomocí příkazu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;socket.to(room).emit(&quot;chat_message&quot;, msg)&lt;/code&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name></name></author><category term="git" /><summary type="html">Rozdělení do skupin (room) Cílem tohoto úkolu bude se seznámit s možností rozdělit klienty Socket.io do skupin. V Socket.io se této funkcionalitě říká rooms.</summary></entry><entry><title type="html">Chat aplikace (Sockets.io)</title><link href="http://localhost:4000/chat.html" rel="alternate" type="text/html" title="Chat aplikace (Sockets.io)" /><published>2024-02-26T00:00:00+01:00</published><updated>2024-02-26T00:00:00+01:00</updated><id>http://localhost:4000/chat</id><content type="html" xml:base="http://localhost:4000/chat.html">&lt;h1 id=&quot;základní-komunikace&quot;&gt;Základní komunikace&lt;/h1&gt;
-&lt;p&gt;Cílem tohoto úkolu bude se seznámit s knihovnou Sockets.io, která nám umožní vytvořit jednoduché klient-server aplikace.&lt;/p&gt;
-
-&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
-&lt;p&gt;Nejprve si vytvořte fork této &lt;a href=&quot;https://github.com/RadimBaca/chat&quot;&gt;repository&lt;/a&gt;. Klikněte tedy na tlačítko &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Fork&lt;/code&gt; na další stránce klikněte na &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Create fork&lt;/code&gt;, čímž se vytvoří kopie tohoto repository pod vašim účtem.&lt;/p&gt;
-
-&lt;p&gt;Stáhněte lokálně s pomocí &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cmd&lt;/code&gt; a otevřete projekt ve VSCode.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/vase_jmeno/chat
-&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;chat
-code &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;V repository vidíme dva adresáře. Jeden představuje NodeJS server a druhý představuje klienta.&lt;/p&gt;
-
-&lt;h3 id=&quot;server&quot;&gt;Server&lt;/h3&gt;
-&lt;p&gt;Začneme zprovozněním serveru. Je nutné se přepnout do adresáře server, nainstalovat &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;socket.io&lt;/code&gt; a server spustit.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;server
-npm &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;socket.io
-node main.js
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Pokud nevidte žádnou chybu, server běží a čeká na připojení klientů. Jedná se o NodeJS program. Vyzkoušejte server po spuštění přerušit s pomocí klávesové zkratky &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl+C&lt;/code&gt;. Pokud uděláte nějaké změny v kodu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main.js&lt;/code&gt;, tak je nutné běh serveru takto přerušit a spustit jej znovu, aby se změny projevily.&lt;/p&gt;
-
-&lt;h3 id=&quot;klient&quot;&gt;Klient&lt;/h3&gt;
-&lt;p&gt;Klient je pouze &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.html&lt;/code&gt;. Takže otevřete &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.html&lt;/code&gt; ve dvou oknech, v jednom něco napište a následně stiskněte tlačítko &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SEND&lt;/code&gt;. Pokud vše funguje, tak se napsaná zpráva objevila v obou oknech.&lt;/p&gt;
-
-&lt;h2 id=&quot;jak-to-funguje&quot;&gt;Jak to funguje&lt;/h2&gt;
-&lt;p&gt;Nyní se podrobněji podíváme na to jak to funguje. Základem řešení jsou zprávy posílané mezi jednotlivými aktéry (klient, server). Schematicky je to znázorněno na následujícím obrázku. Máme server ke kterému se připojili dva klienti. Server má seznam připojených klientů a když obdrží zprávu, tak ji rozešle všem.
-&lt;img src=&quot;images/socket_io1.png&quot; alt=&quot;zprávy v socket.io&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;klient-1&quot;&gt;Klient&lt;/h3&gt;
-&lt;p&gt;Pro práci se zprávami máme u klienta k dispozici následující funkce:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;socket.emit(&apos;chat_message&apos;, msg)&lt;/code&gt; - pošle zprávu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chat_message&lt;/code&gt; s řětězcovou hodnotou &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;msg&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;socket.on(&apos;chat_message&apos;, function X(msg))&lt;/code&gt; - pokud obdrží zprávu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chat_message&lt;/code&gt; tak spustí funkci &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;X&lt;/code&gt; a předá ji řetězcový parametr &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;msg&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Zamyšlení&lt;/strong&gt;
-Kde jsme již mohli vidět, že předáváme funkci jako parametr?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;server-1&quot;&gt;Server&lt;/h3&gt;
-&lt;p&gt;Na straně serveru vypadají funkce velmi podobně jako u klienta:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;io.emit(&apos;chat_message&apos;, msg)&lt;/code&gt; - pošle zprávu všem klientům.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;socket.on(&apos;chat_message&apos;, function X(msg))&lt;/code&gt; - pokud obdrží zprávu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chat_message&lt;/code&gt; tak spustí funkci &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;X&lt;/code&gt; a předá ji řetězcový parametr &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;msg&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Nicméně přece jenom je to na straně serveru malinko komplikovanější. Můžeme si všimnout, že téměř všechen kód se nachází v handleru &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;io.on(&apos;connection&apos;, handler)&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-JS&quot;&gt;io.on(&apos;connection&apos;, (socket) =&amp;gt; {
-  // kód handleru
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Můžeme tomu rozumět tak, při vytvoření nového socket spojení (připojení nového klienta) se spustí kód handleru, který následně obsluhuje požadavky klienta. Pokud server provede &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;io.emit&lt;/code&gt; pak se zpráva rozešle všem klientům, jak to deomnstruje následující obrázek.
-&lt;img src=&quot;images/socket_io2.png&quot; alt=&quot;Zaslaní zprávy s pomocí io.emit&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Úkol 1 - odeslání zprávy jen ostatním klientům&lt;/strong&gt;
-Nyní celý program funguje tak, že pokud klient odešle zprávu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&apos;chat_message&apos;&lt;/code&gt;, pak mu zprávu pošle server zpět. Nicméně to je poměrně zbytečné. V Sockets.io &lt;a href=&quot;https://socket.io/docs/v3/broadcasting-events/&quot;&gt;existuje možnost&lt;/a&gt; rozeslat zprávu všem ostatním kromě klienta, který zprávu inicioval s pomocí &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;socket.broadcast.emit(&apos;chat_message&apos; , msg)&lt;/code&gt;. Přepište tedy celý program, aby se použil &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;broadcast.emit&lt;/code&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Úkol 2 - vlastní zprávy v chatu podbarvěte&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;json&quot;&gt;JSON&lt;/h2&gt;
-&lt;p&gt;Všimneme si, že při komunikaci si předáváme pouze řetězcové hodnoty. To má za následek skutečnost, že pokud chceme v rámci jedné zprávy předat komplexnější strukturu jako třeba JSON musíme ji nejprve převést na řetězec a pak následně z řetězce zase zpět.&lt;/p&gt;
-
-&lt;p&gt;Pro takové převody máme k dispozici následující funkce:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;JSON.stringify(json_object)&lt;/code&gt; - převede &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;json_object&lt;/code&gt; na řetězec&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;JSON.parse(string)&lt;/code&gt; - vrací JSON z řetězce&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Úkol 3 - přidání pořadí zprávy&lt;/strong&gt;
-U každého klienta si vytvořte číselnou proměnnou, kterou na začátku nastavíte na nula. Při každém odeslání zprávy ji inkrementujete. Pošlete číslo spolu s textem zprávy jako jeden JSON objekt po stisku tlačítka SEND. Objekt je potřeba převést na řetězec s pomocí &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;JSON.stringify&lt;/code&gt; a následně zpět.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;další-úkoly&quot;&gt;Další úkoly&lt;/h2&gt;
-&lt;p&gt;Zkuste nyní dopracovat následující úkoly.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Úkol 4 - zadání jména&lt;/strong&gt;
-Do &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;class&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;div&lt;/code&gt; elementu s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;id=&quot;chat&quot;&lt;/code&gt; přidejte hodnotu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hidden&lt;/code&gt;. Tím celou chatovací část skryjete. 
-Přidejte druhý &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;div&lt;/code&gt; s textboxem a tlačítkem OK, kde bude uživatel zadávat svoje jméno. Nastavte &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;div id=&quot;init&quot;&lt;/code&gt;. Po kliknutí se vymění zobrazení &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;div&lt;/code&gt; (tzn. jeden div zobrazíte a druhý skryjete). Kupříkladu první &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;div&lt;/code&gt; se zobrazí následujícím příkazem &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;document.getElementById(&quot;chat&quot;).classList.remove(&quot;hidden&quot;)&lt;/code&gt;.&lt;br /&gt;
-Uložené jméno pak přidávejte do JSON objektu, který posíláte serveru po stisku tlačítka SEND a jméno pak zobrazujte před samotnou zprávou.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Úkol 5 - přidávání zpráv nahoru&lt;/strong&gt;
-Nyní se zprávy přidávají dolů. Upravte kód, aby se zprávy přidávaly nahoru.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&quot;/chat_room.html&quot;&gt;Pokračování - Socket.io room&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="git" /><summary type="html">Základní komunikace Cílem tohoto úkolu bude se seznámit s knihovnou Sockets.io, která nám umožní vytvořit jednoduché klient-server aplikace.</summary></entry><entry><title type="html">Git intro</title><link href="http://localhost:4000/git.html" rel="alternate" type="text/html" title="Git intro" /><published>2024-02-19T00:00:00+01:00</published><updated>2024-02-19T00:00:00+01:00</updated><id>http://localhost:4000/git</id><content type="html" xml:base="http://localhost:4000/git.html">&lt;h1 id=&quot;git---úvod&quot;&gt;Git - Úvod&lt;/h1&gt;
-&lt;p&gt;Git nám především umožní jednoduše sdílet soubory (tzn. náš zdrojový kód) s dalšími lidmi. Nicméně funkcí, kterém nám git nabízí je mnohem více. Uložením na git server vytvoříme zálohu našeho projektu na internetu, budeme se moci vracet k předchozím verzím, řešit konflikty v kódu a také budeme moci vytvářet tzv. větve. K práci s gitem budeme z počátku používat command line příkazy, které si dnes vyzkoušíme.&lt;/p&gt;
-
-&lt;h1 id=&quot;github&quot;&gt;Github&lt;/h1&gt;
-&lt;p&gt;Jednomu projektu se na gitu říká &lt;strong&gt;repository&lt;/strong&gt;. Repository můžete mít lokální v adresáři, nebo někde na server třeba na &lt;a href=&quot;https://github.com/&quot;&gt;github.com&lt;/a&gt;. Začneme tedy tím, že na &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;github.com&lt;/code&gt;:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;vytvoříte účet (např. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hacker_ostravski&lt;/code&gt;),&lt;/li&gt;
-  &lt;li&gt;přihlásíte se do něj&lt;/li&gt;
-  &lt;li&gt;a vytvoříte si nové repository se jménem &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;KeyDown&lt;/code&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;Klikneme na &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;New&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;Vyplníme repository name na &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;KeyDown&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;Klikneme na &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Create repository&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;images/git_new.png&quot; alt=&quot;Vytváření nového repository v github.com&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Po vytvoření se nám v &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;github.com&lt;/code&gt; otevře stránka https://github.com/hacker_ostravski/KeyDown našeho nově vytvořeného repository. Prozatím je repository prázdné a stránka by tedy měla vypadat podobně jako to vidíme na obrázku.
-&lt;img src=&quot;images/git_repository.png&quot; alt=&quot;Nové repository v github.com&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Naše repository je tedy umístěno na serveru &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;github.com&lt;/code&gt; a my budeme chtít vytvořit jeho kopií v na lokálním počítači. K tomu využijeme příkazovou řádku.&lt;/p&gt;
-
-&lt;h2 id=&quot;přidávání-změn&quot;&gt;Přidávání změn&lt;/h2&gt;
-
-&lt;p&gt;Otevřete příkazovou řádku (v nabídce Start napište &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cmd&lt;/code&gt;) a přesuňte se do adresáře &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;c:\users\kp\git&lt;/code&gt;. Následně proveďte stažení repository do lokálního adresáře. Adresář se bude jmenovat stejně jako repository.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;c:&lt;span class=&quot;se&quot;&gt;\u&lt;/span&gt;sers&lt;span class=&quot;se&quot;&gt;\k&lt;/span&gt;p&lt;span class=&quot;se&quot;&gt;\g&lt;/span&gt;it
-git clone https://github.com/hacker_ostravski/KeyDown
-&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;KeyDown
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Nyní se nacházíme v naší lokální kopií repository &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;KeyDown&lt;/code&gt;. Nyní se pustíme do vytvoření nového souboru, jeho umístění do lokálního repository a jeho následné zkopírování na &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;github.com&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# Moje nove repository &amp;gt; readme.md&lt;/span&gt;
-git add readme.md
-git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Muj prvni commit&quot;&lt;/span&gt;
-git push
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Tuto posloupnost &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git&lt;/code&gt; příkazů si zapamatujte. Budete ji používat vemi často.&lt;/strong&gt; Na následujícím obrázku jsou tyto příkazy vyjádřeny schématicky. 
-&lt;img src=&quot;images/git_basic.png&quot; alt=&quot;Základní příkazy&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Po provedení příkazů se přepněte do prohlížeče a znovu si zobrazte svoje repository na &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;github.com&lt;/code&gt;. Nyní už by mělo obsahovat jeden soubor &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;readme.md&lt;/code&gt;, který jsme tam přidali. Také se na stránce objevil popis, který odpovídá textu v &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;readme.md&lt;/code&gt;. Git servery vždy automaticky zobrazují obsah &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;readme.md&lt;/code&gt; na stránce repository.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Úkol 1:&lt;/strong&gt;
-Ve svém počítači proveďte změnu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;readme.md&lt;/code&gt;  (cokoli do něj dopište) a následně tuto změnu propagujte do repository. Použijte stejnou posloupnost git příkazů (tzn. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;add&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;commit&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;push&lt;/code&gt;).&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Příkaz &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git add&lt;/code&gt; jsme využili k přidávání změn v jednom souboru. Nicméně tento příkaz dokáže přidat i změny z více soborů najednou, takže jej nemusíme spouštět pro každý soubor zvlášť. Místo jména souboru dáme hvězdičku, která představuje libovolný řetězec.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Úkol 2:&lt;/strong&gt;
-Přidejte do repository soubory &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.html&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;script.js&lt;/code&gt;, a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;style.css&lt;/code&gt; z board game, kterou jste vytvořili v repl.it.  Následně tyto změny propagujte do lokální repository a pošlete na Github. Použijte stejnou posloupnost git příkazů (tzn. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;add&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;commit&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;push&lt;/code&gt;).&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Pokud chceme vložit do staging area změny, které jsme provedli v souborech, které už v repository jsou, pak můžeme využít příkaz &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git add -u&lt;/code&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Úkol 3:&lt;/strong&gt;
-Přidejte do lokálního adresáře soubor &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;poznamky.txt&lt;/code&gt;, kde si zapíšete dnešní datum. Přidejte do souboru &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;readme.md&lt;/code&gt; popis projektu. Tzn. že se jedná o jednoduchou HTML hru, která se ovládá klávesami. Propagujte změny na Github tak, aby tam soubor &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;poznamky.txt&lt;/code&gt; nebyl, ale změny provedené v &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;readme.md&lt;/code&gt; ano.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;přidání-spolupracovníka-collaborators&quot;&gt;Přidání spolupracovníka (collaborators)&lt;/h2&gt;
-&lt;p&gt;Pro přidání spolupracovníka přejdeme opět na stránku  https://github.com/hacker_ostravski/KeyDow. Vybereme nahoře záložku &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;settings&lt;/code&gt; a pak vlevo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;collaborators&lt;/code&gt;. Otevře se nám okno, kde můžeme přidat uživatele jak vidíme na obrázku. Přidejte uživatele se kterým jste domluveni (on vás také přidá).
-&lt;img src=&quot;images/git_colaborator.png&quot; alt=&quot;collaborators&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Nyní máme přístup k repository druhého uživatele. Řekněme, že jde o uživatele &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;polrajch&lt;/code&gt;. Nyní chcete přistoupit k jeho repository a přidat mu do souboru &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;readme.md&lt;/code&gt; nějaké změny. Opět repository stáhneme do lokálního adresesáře provedeme změny a ty následně potvrdíme posloupností příkazů &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;add&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;commit&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;push&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone http:&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;gitbub.com&lt;span class=&quot;se&quot;&gt;\p&lt;/span&gt;olrajch&lt;span class=&quot;se&quot;&gt;\K&lt;/span&gt;eyDown polrajch_keydown
-&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;polrajch_keydown
-&lt;span class=&quot;c&quot;&gt;# provedeme změnu v souboru readme.md&lt;/span&gt;
-git add &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt;
-git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Readme.md upraveno&quot;&lt;/span&gt;
-git push
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Nyní počkejte až ve vašem repository provede uživatel také změny a dá je na github.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;V tuto chvíli jsou ve vašem Github repository změny provedené druhým uživatelem. Aby jste mohli dále pracovat na aktuální verzi u sebe na počítači, tak je potřeba změny stáhnout. To se provede příkazem &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git pull&lt;/code&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Úkol 4:&lt;/strong&gt;
-Zkuste se zamyslet, v jakých chvílích by jste měli příkaz &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git pull&lt;/code&gt; spouštět. Existují nějaké typické chvíle, kdy by jste jej měli provést?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;konflikty&quot;&gt;Konflikty&lt;/h2&gt;
-&lt;p&gt;Konflikt je situace, kdy vy i druhý uživatel provede změny ve stejném souboru.&lt;/p&gt;
-
-&lt;p&gt;Zkusíte si tedy vyvolat konflikt v lokálním repository sami tak, že si repository stáhneme podruhé do jiného adresáře. Otevřete si druhé command line okno a proveďte následující.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone http:\\gitbub.com\hacker_ostravski\KeyDown KeyDown2
-cd keydown2
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Máme tedy repository lokálně dvakrát. Jednou v adresáři &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;KeyDown&lt;/code&gt; a podruhé v adresáři &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;KeyDown2&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;automaticky-řešené-konflikty&quot;&gt;Automaticky řešené konflikty&lt;/h3&gt;
-&lt;p&gt;Zkusíme nyní v repository vyvolat konflikt. Zkusíme začít konfliktem, který by měl git vyřešit sám, bez nutnosti zásahu uživatele.&lt;/p&gt;
-
-&lt;p&gt;Provedeme postupně změny ve &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;script.js&lt;/code&gt; souborech. V prvním adresáři zapíšete komentář na začátek souboru a v tomto adresáři provedete &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;add&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;commit&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;push&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# provedeme změnu v souboru script.js (dáme komentář na začátek script.js)&lt;/span&gt;
-git add &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt;
-git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;script.js Komentar pridan na zacatek&quot;&lt;/span&gt;
-git push
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;V druhém adresáři provedeme změnu ve &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;script.js&lt;/code&gt; tak, že přidáme komentář na konec. V druhém adresáři nyní provedem příkazy &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;add&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;commit&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt;
-git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;script.js Komentar pridan na konec&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Pokud se nyní pokusíme provést příkaz &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;push&lt;/code&gt;, tak se příkaz neprovede, protože na git je nyní verze, která je o jeden commit dále něž je tato lokální verze. Tzn. musíme v druhém adresáři před provedením &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git push&lt;/code&gt; provést nejprve &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git pull&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git pull
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Obě změny jsou ve stejném souboru (tzn. jsou konfliktní). Nicméně git si s nimi poradí, protože změny jsou v jiných částech souboru a obě verze spojí do nové verze, kde jsou oba komentáře. 
-&lt;img src=&quot;images/git_automatic_merge.png&quot; alt=&quot;automaticky vyřešený konflikt&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Nyní změnu pošlete na Github respository s pomocí &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;push&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;konflikty-řešené-uživatelem&quot;&gt;Konflikty řešené uživatelem&lt;/h3&gt;
-&lt;p&gt;Druhá situace, kterou vyzkoušíme, je komplikovanější. Může se nám stát, že vznikne konflikt ve stejném řádku souboru a git si s tím nebude vědět rady. Nejprve tedy v obou adresářích provedeme &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git pull&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git pull
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Nyní v obou adresářích změníme text v úvodním komentáři. V prvním adresáři dáte &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;add&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;commit&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;push&lt;/code&gt;. V druhém adresáři dáte následující příkazy.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt;
-git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;script.js upraven komentar prvniho radku&quot;&lt;/span&gt;
-git pull
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Příkaz &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git pull&lt;/code&gt; povede na konflikt, který je nutné vyřešit ručně. Když dáme příkaz &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git status&lt;/code&gt; uvdíme, že soubor je v konfliktním stavu. Při otevření souboru v libovolném textovém editoru vidíme poněkud nepřehledný obsah, který neodpovídá ani jedné verzi souboru. Pro efektivní vyřešení konfliktu využijeme Visual Studio Code.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;code &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Ve VSCode bychom u souboru s git konfliktem měli vidět barevně vyznačené konfliktní řádky a vpravo dole tlačítko “Resolve in merge editor”, které nám umožní konflikty efektivně vyřešit s pomocí tzv. 3-way merge monitor.
-&lt;img src=&quot;images/vscode.png&quot; alt=&quot;VSCode&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;3-way merge monitor nám umožní akceptovat buď je jednu z vybraných změn, nebo akteptovat obě. Možné je také to, že vytvoříme verzi úplně novou vzniklou spojením předchozích dvou. V editoru máme tři okna. Dvě horní jsou pro lokální verzi a pro vzdálenou verzi. Dolní okno je výsledek spojení. 
-&lt;img src=&quot;images/mergeeditor.png&quot; alt=&quot;mergeeditor&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Nad každým konfliktem můžeme v obou hodních oknech vidět tlačítka &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Accept Incomming&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Accept Combination&lt;/code&gt;, nebo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Accept Current&lt;/code&gt;. Pokud na některé klikneme, pak to odpovídajícím způsobem upraví kód v dolním okně. Vyzkoušejte. Jakmile budete mít všechny konflikty vyřešeny, tak klikněte na tlačítko &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Complete Merge&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Nyní je konflikt vyřešen a git nám dovolí provést &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;push&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><summary type="html">Git - Úvod Git nám především umožní jednoduše sdílet soubory (tzn. náš zdrojový kód) s dalšími lidmi. Nicméně funkcí, kterém nám git nabízí je mnohem více. Uložením na git server vytvoříme zálohu našeho projektu na internetu, budeme se moci vracet k předchozím verzím, řešit konflikty v kódu a také budeme moci vytvářet tzv. větve. K práci s gitem budeme z počátku používat command line příkazy, které si dnes vyzkoušíme.</summary></entry><entry><title type="html">Lorem Ipsum, čt 16:00</title><link href="http://localhost:4000/LoremIpsum_1600.html" rel="alternate" type="text/html" title="Lorem Ipsum, čt 16:00" /><published>2024-02-19T00:00:00+01:00</published><updated>2024-02-19T00:00:00+01:00</updated><id>http://localhost:4000/LoremIpsum_1600</id><content type="html" xml:base="http://localhost:4000/LoremIpsum_1600.html">&lt;h2 id=&quot;úvod&quot;&gt;Úvod&lt;/h2&gt;
+&lt;h3 id=&quot;zakladni-informace&quot;&gt;Zakladni informace&lt;/h3&gt;
 
 &lt;p&gt;Lektor: Radim Bača&lt;/p&gt;
 
-&lt;p&gt;Classroom code (section): RNWSTL&lt;/p&gt;
+&lt;p&gt;Classroom code (section): DGQYYY&lt;/p&gt;
 
-&lt;p&gt;Místnost: EB207&lt;/p&gt;
-
-&lt;p&gt;Čas: 16:00&lt;/p&gt;</content><author><name></name></author><category term="side" /><summary type="html">Úvod</summary></entry><entry><title type="html">Board game</title><link href="http://localhost:4000/board_game.html" rel="alternate" type="text/html" title="Board game" /><published>2023-10-12T00:00:00+02:00</published><updated>2023-10-12T00:00:00+02:00</updated><id>http://localhost:4000/board_game</id><content type="html" xml:base="http://localhost:4000/board_game.html">&lt;h1 id=&quot;board-game&quot;&gt;Board game&lt;/h1&gt;
-
-&lt;p&gt;Nejprve se &lt;a href=&quot;https://replit.com/teams/join/xvtsjzaadrqmanaknpncvlanyelasxgw-lorem-ipsum-team&quot;&gt;připojte do Lorem Ipsum týmu&lt;/a&gt; na Repl.it, kde by jste měli nalézt HTML5 verzi programu, který se nazývá “BoardGame 2”.&lt;/p&gt;
-
-&lt;h2 id=&quot;popis-programu&quot;&gt;Popis programu&lt;/h2&gt;
-&lt;p&gt;Základem celé aplikace je dvourozměrné pole &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;game_board&lt;/code&gt; (10x10). K jednomu prvku pole přistoupíme s pomocí dvou hranatých závorek. Tzn. například:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-JavaScript&quot;&gt;game_board[1][0] = 10
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;uloží na první řádek a nultý sloupec hodnotu 10. Jednotlivé políčka v &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;game_board&lt;/code&gt; jsou nastavená na hodnotu nula nebo jedna. Hodnota jedna má vyjadřovat, že na dané pozici nachází překážka.&lt;/p&gt;
-
-&lt;p&gt;Dále se v programu nachází proměnné &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x&lt;/code&gt; a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;y&lt;/code&gt;, které uchovávají pozici hráče. Hráč je ovládán šipkami a posun v poli je implementován ve funkci &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;moveCircle&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;úkoly&quot;&gt;Úkoly&lt;/h2&gt;
-
-&lt;p&gt;U této verze zkuste následující úkoly:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Ošetřete v metodě &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;moveCircle&lt;/code&gt; pohyb hráče tak, aby nemohl vstoupit na pole s překážkou (tzn. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;game_board&lt;/code&gt; je na dané pozici nastaven na jedna)&lt;/li&gt;
-  &lt;li&gt;Změňte obrázek překážky z modrého čtverce na nějaký obrázek (např. stěna)&lt;/li&gt;
-  &lt;li&gt;Změňte obrázek hráče z červeného kruhu na nějaký obrázek (např. auto, osoba zvrchu)&lt;/li&gt;
-  &lt;li&gt;Přidejte do &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;game_board&lt;/code&gt; novou hodnotu 2, která bude reprezentovat nějakou odměnu, kterou chceme sebrat. Upravte &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;createBoard()&lt;/code&gt; funkci, aby se odměny zobrazovaly v HTML.&lt;/li&gt;
-  &lt;li&gt;Napište do &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;moveCircle&lt;/code&gt; logiku, která bude kontrolovat, zda-li hráč nevstoupil na pole s odměnou. Pokud vstoupí na pole s odměnou provede následující:
-    &lt;ol&gt;
-      &lt;li&gt;Zvýší skóre hráče.&lt;/li&gt;
-      &lt;li&gt;Odstraní odměnu z &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;game_board&lt;/code&gt;. Tzn. nastaví dané pole na 0 a v HTML odebere obrázek odměny.&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;npc&quot;&gt;NPC&lt;/h1&gt;
-&lt;p&gt;Nyní zkusíme do našeho programu přidat NPC (non-playable character), který bude hráče pronásledovat. K tomu potřebujeme několik změn v našem programu:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Proměnné, které budou udávat pozici NPC v programu.&lt;/li&gt;
-  &lt;li&gt;Funkci, která se bude spouštět v pravidelných intervalech a která bude posunovat pozici NPC.&lt;/li&gt;
-  &lt;li&gt;Funkci, která bude schopna v našem &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;game_board&lt;/code&gt; nalézt nejkratší cestu od hráče k NPC.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;spouštění-v-pravidelných-intervalech&quot;&gt;Spouštění v pravidelných intervalech&lt;/h2&gt;
-
-&lt;p&gt;Vytvořte si funkci &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;posunNPC&lt;/code&gt;, kde bude docházet k posunu NPC a také se bude kontrolovat, zda-li NPC není na stejném poli s hráčem. Tato funkce se bude v JavaScriptu volat spomocí funkce &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;setInterval&lt;/code&gt;. Takže to bude vypadat nějak takto:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-JavaScript&quot;&gt;function posunNPC() { 
-  // dopiště vlastní logiku
-  console.log(&quot;Function executed every second.&quot;); 
-} 
-setInterval(myFunction, 1000); // spouštěno každou sekundu
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;hledání-nejkratší-cesty&quot;&gt;Hledání nejkratší cesty&lt;/h2&gt;
-&lt;p&gt;Pro hledání nejkratší cesty využijeme algoritmus breath first search (BFS). Názorné vysvětlení algoritmu je možné vidět třeba &lt;a href=&quot;https://www.youtube.com/watch?v=T_m27bhVQQQ&amp;amp;t=131s&quot;&gt;zde&lt;/a&gt;. V lorem ipsum týmu na Repl.it je nyní program, který hledá nejkratší cestu v bludišti. Toto hledání realizuje funkce &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shortestPathSearch&lt;/code&gt;. Zkusme se podrobně podívat na jednotlivé parametry funkce:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;game_board&lt;/code&gt; - dvourozměrné pole, tak jak jej máme v předchozím programu.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xp&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yp&lt;/code&gt; - souřadnice hráče&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x_npc&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;y_npc&lt;/code&gt; - souřadnice NPC&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;script src=&quot;https://gist.github.com/RadimBaca/aee7196ba05f3d214862f99d8e10950b.js&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;import-do-souboru&quot;&gt;Import do souboru&lt;/h2&gt;
-&lt;p&gt;Pro zpřehlednění programu můžeme hledání nejkratší cesty (funkci shortestPathSearch) přenést do samostatného souboru a v index.js ji naimportovat. Příklad toho jak se to v JavaScriptu dělá můžete vidět v následující &lt;a href=&quot;https://stackoverflow.com/questions/56336729/how-can-i-import-functions-from-an-other-javascript-file&quot;&gt;otázce na StackOverflow&lt;/a&gt; popřípadě si můžete přečíst delší vysvětlení exportu a importu v JavaScriptu &lt;a href=&quot;https://javascript.info/import-export&quot;&gt;zde&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h1 id=&quot;projects&quot;&gt;Projects&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://a9832060-26c8-4de7-ae72-72d48ee97a2a-00-2trpl9iqhy9de.kirk.repl.co/&quot;&gt;Oli&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://67bddb21-684e-459a-bc84-700143735516-00-2z1jsm83dcxin.picard.replit.dev/&quot;&gt;Marek&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://b749510d-4acf-447b-ad59-4263eeec8acf-00-yzju7i5noigg.spock.replit.dev/&quot;&gt;Vinca&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://d52cf779-cb95-4456-855b-d14e5fb2909e-00-22du8e5dvf147.spock.replit.dev/&quot;&gt;Štěpán&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://7bf0ad76-008d-44a5-9f2e-45f1186bb280-00-1n6rw7vbrqagr.spock.replit.dev/&quot;&gt;Dominik&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSfsBAm0frYEt1yUAt_QfjHXDDR4fXaRNIVSg_iLYyodVk58Yg/viewform?usp=sf_link&quot;&gt;Formulář pro hodnocení&lt;/a&gt; výsledné aplikace.&lt;/p&gt;</content><author><name></name></author><summary type="html">Board game</summary></entry><entry><title type="html">Pokročilí, čt 14:30</title><link href="http://localhost:4000/Advanced_1430.html" rel="alternate" type="text/html" title="Pokročilí, čt 14:30" /><published>2023-10-04T00:00:00+02:00</published><updated>2023-10-04T00:00:00+02:00</updated><id>http://localhost:4000/Advanced_1430</id><content type="html" xml:base="http://localhost:4000/Advanced_1430.html">&lt;h2 id=&quot;úvod&quot;&gt;Úvod&lt;/h2&gt;
-
-&lt;p&gt;Lektor: Hynek Dráždil&lt;/p&gt;
-
-&lt;p&gt;Classroom code (section): SRPHXY&lt;/p&gt;
-
-&lt;p&gt;Místnost: EB406&lt;/p&gt;
+&lt;p&gt;Místnost: EB405&lt;/p&gt;
 
 &lt;p&gt;Čas: 14:30&lt;/p&gt;
 
-&lt;p&gt;Náplň: Učíme se programovat v jazyce JavaScript od základů, což je například práce s proměnými a eventy.&lt;/p&gt;</content><author><name></name></author><category term="side" /><summary type="html">Úvod</summary></entry><entry><title type="html">Pokročilí, čt 16:00</title><link href="http://localhost:4000/Advanced_1600.html" rel="alternate" type="text/html" title="Pokročilí, čt 16:00" /><published>2023-10-04T00:00:00+02:00</published><updated>2023-10-04T00:00:00+02:00</updated><id>http://localhost:4000/Advanced_1600</id><content type="html" xml:base="http://localhost:4000/Advanced_1600.html">&lt;h2 id=&quot;úvod&quot;&gt;Úvod&lt;/h2&gt;
+&lt;h3 id=&quot;popis-kroužku&quot;&gt;Popis kroužku&lt;/h3&gt;
+
+&lt;p&gt;Tento kroužek je koncipován jako navazující na kroužek pro začátečníky. Předpokládá se, že účastníci chápou a umějí používat základní stavební bloky programovacích jazyků jako:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Opakované provedení (cyklus)&lt;/li&gt;
+  &lt;li&gt;Podmíněné provedení (if-else)&lt;/li&gt;
+  &lt;li&gt;Funkce&lt;/li&gt;
+  &lt;li&gt;Proměnná (typu integer a string)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;V prvním půl roce znalost těchto konceptů ještě dále prohloubíme a zejména uplatníme při tvorbě aplikací s jednoduchými ovládacími prvky (textbox, tlačítko, dropdown). V druhé polovině roku, pak začneme pracovat s polem, což nám umožní ještě více rozšířit paletu aplikací.&lt;/p&gt;
+
+&lt;h2 id=&quot;práce-s-ovládacímí-prvky&quot;&gt;Práce s ovládacímí prvky&lt;/h2&gt;
+
+&lt;p&gt;Každý ovládací prvek má své unikátní jméno. Na následujícím obrázku vidíme aplikaci se třemi ovládacími prvky:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/applab_basic.png&quot; alt=&quot;kids&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;TextBox - jak vidíme na obrázku jméno textboxu je &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text_input1&lt;/code&gt;. Jméno se objeví, když v AppLabu najedeme na ovládací prvek myší.&lt;/li&gt;
+  &lt;li&gt;Tlačítko - jeho jméno je &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;button_ok&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Label - popiska s textem “text”, kde jméno ovládacího prvku je &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;label_text&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;gettext---načtení-hodnoty&quot;&gt;getText - načtení hodnoty&lt;/h3&gt;
+
+&lt;p&gt;Jak tedy načteme textovou hodnotu ovládacího prvku do proměnné? Pro načtení textové hodnoty textboxu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text_input1&lt;/code&gt; do proměnné &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;moje_promenna&lt;/code&gt; napíšeme:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;moje_promenna&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;text_input1&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;settext---nastavení-hodnoty&quot;&gt;setText - nastavení hodnoty&lt;/h3&gt;
+
+&lt;p&gt;Podobně potřebujeme občas hodnoty ovládacích prvků nastavovat. Nyní máme v proměnné &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;moje_promenna&lt;/code&gt; hodnotu načtenou z textboxu. Nyní hodnotu nastavíme do popisky &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;label_text&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;setText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;label_text&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;moje_promenna&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;onevent---reakce-na-událost&quot;&gt;onEvent - reakce na událost&lt;/h3&gt;
+
+&lt;p&gt;V mnoha situacích potřebujeme ještě reagovat na události. Nejobvykleji se jedná o vstupy od uživatele jako je kliknutí na tlačítko, nebo zadání hodnoty. Reakce na stisknutí tlačítka &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;button_ok&lt;/code&gt;, kde zkopírujeme hodnotu zadanou v text boxu do popisky &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;label_text&lt;/code&gt; bude vypadat následovně:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;onEvent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;screen1&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;moje_promenna&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;text_input1&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;setText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;label_text&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;moje_promenna&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;rozličné-zajímavé-úkoly&quot;&gt;Rozličné zajímavé úkoly&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://studio.code.org/projects/applab/E80ueH72KM8WSqk1bvPrdwk1IPv1J36EEW_Xhum__Mo&quot; title=&quot;Unikova hra&quot;&gt;Úniková hra&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://studio.code.org/projects/applab/JLlNAmd3VcM0ItZXYBR-TCnfL_wLoTK52etVfogTHfQ&quot; title=&quot;Unikova hra (autor Matěj Chamrád)&quot;&gt;Úniková hra (autor Matěj Chamrád)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://studio.code.org/projects/applab/-hRWjKGg9Q8nzRiqLY1XzC_WWRawVgYgtxjtjDDbiR4&quot; title=&quot;Malá nábosilka&quot;&gt;Malá nábosilka&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bit.ly/3eTLeYH&quot;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;dungeon-hra-vytvořená-studenty-kroužku&quot;&gt;Dungeon hra vytvořená studenty kroužku&lt;/h2&gt;
+
+&lt;p&gt;V rámci kroužku studenti vytvořili svou varinatu hry Dungeon. Pokud máte zájem vyzkoušejte jednotlivé varianty této hry a následně &lt;a href=&quot;https://forms.gle/9opLdAvNL8XhRCX67&quot;&gt;zde vložte své hodnocení jednotlivých verzí&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dungeon-blbeceknakoni.lorem-ipsum-team.repl.co/&quot;&gt;Štěpán&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dungeon-misa2012.lorem-ipsum-team.repl.co/&quot;&gt;Michael&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dungeon-marekhornik.lorem-ipsum-team.repl.co/&quot;&gt;Marek&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dungeon-kanystrbenzinu.lorem-ipsum-team.repl.co/&quot;&gt;Oli&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dungeon-artek0027.lorem-ipsum-team.repl.co/&quot;&gt;Artek&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Úvod</summary></entry><entry><title type="html">Začátečníci pátek</title><link href="http://localhost:4000/Beginners-Fri.html" rel="alternate" type="text/html" title="Začátečníci pátek" /><published>2022-09-19T00:00:00+02:00</published><updated>2022-09-19T00:00:00+02:00</updated><id>http://localhost:4000/Beginners-Fri</id><content type="html" xml:base="http://localhost:4000/Beginners-Fri.html">&lt;h2 id=&quot;úvod&quot;&gt;Úvod&lt;/h2&gt;
+
+&lt;p&gt;Lektor: Hynek Dráždil&lt;/p&gt;
+
+&lt;p&gt;Classroom code (section): JGKPMN&lt;/p&gt;
+
+&lt;p&gt;Místnost: EB208&lt;/p&gt;
+
+&lt;p&gt;Čas: 14:30&lt;/p&gt;
+
+&lt;p&gt;23.9. - Naučili jsme se programovat jednoduché algoritmy. (lekce 1,2)&lt;/p&gt;
+
+&lt;p&gt;30.9. - Programovali jsme želví grafiku. (lekce 3,4)&lt;/p&gt;
+
+&lt;p&gt;7.10 - Začali jsme pracovat se sprity. (lekce 5,6)&lt;/p&gt;
+
+&lt;p&gt;14.10 - Rozšířili jsme si práci se sprity o události. (lekce 7,8)&lt;/p&gt;
+
+&lt;p&gt;21.10. - Skončili jsme s sprity a položili základy práce se smyčkami. (lekce 10,11)&lt;/p&gt;
+
+&lt;p&gt;4.11. - Naučili jsme používat cykly a vnořené cykly. (lekce 11,12)&lt;/p&gt;
+
+&lt;p&gt;11.11. - Začali jsme pracovat s podmínkami. (lekce 13,14)&lt;/p&gt;
+
+&lt;p&gt;18.11. - Pokračovali jsme s podmínkami. (lekce 15,16)&lt;/p&gt;
+
+&lt;p&gt;25.11. - Začali jsme s podmíněnými cykly (lekce 17,18)&lt;/p&gt;
+
+&lt;p&gt;2.12. - Pokračujeme v práci s podmíněnými cykly (lekce 19, 20)&lt;/p&gt;</content><author><name></name></author><summary type="html">Úvod</summary></entry><entry><title type="html">Začátečníci čtvrtek</title><link href="http://localhost:4000/Beginners-Th.html" rel="alternate" type="text/html" title="Začátečníci čtvrtek" /><published>2022-09-19T00:00:00+02:00</published><updated>2022-09-19T00:00:00+02:00</updated><id>http://localhost:4000/Beginners-Th</id><content type="html" xml:base="http://localhost:4000/Beginners-Th.html">&lt;h2 id=&quot;úvod&quot;&gt;Úvod&lt;/h2&gt;
 
 &lt;p&gt;Lektor: Katka Kolaříková&lt;/p&gt;
 
-&lt;p&gt;Classroom code (section): RNWSTL&lt;/p&gt;
+&lt;p&gt;Classroom code (section): VTWQJD&lt;/p&gt;
 
-&lt;p&gt;Místnost: EB406&lt;/p&gt;
+&lt;p&gt;Místnost: EB207&lt;/p&gt;
 
-&lt;p&gt;Čas: 16:00&lt;/p&gt;
+&lt;p&gt;Čas: 14:30&lt;/p&gt;
 
-&lt;h2 id=&quot;zadání-únikovky&quot;&gt;Zadání Únikovky&lt;/h2&gt;
+&lt;p&gt;29.9. Hotové máme první 4 kapitoly, poslední se jmenuje Creating Art with Code&lt;/p&gt;
 
-&lt;p&gt;Na stránce code.org si v protředí “App lab” vytvořte nový projekt. Vaším cílem bude vytvořit Únikovku.&lt;/p&gt;
+&lt;p&gt;6.10 - Dokončili jsme 6.lekci, Making sprites&lt;/p&gt;
 
-&lt;p&gt;Únikovka je hra, jejímž cílem je vyřešit hádanky a odhalit tak tajemství. Vytvořte svoji vlastní hru, která bude obsahovat různé hádanky, které bude muset uživatel vyluštit.&lt;/p&gt;
+&lt;p&gt;13.10 - Dokončili jsme 8 lekci, Virtuální zvířátko s laboratoří sprajtů&lt;/p&gt;
 
-&lt;p&gt;Vymyslete si proto zajímavé prostředí a zasaďte do něj alespoň 5 hádanek. Ty bude muset hráč vyřešit, aby se dostal k cíli. Hádanky a protředí si můžete vymyslet jakékoliv chcete, podle toho, co máte rádi. Klidně můžete vymyslet i nějaký úvodní příběh, který hráči představí, v jakém se nachází prostředí a co bude hledat.&lt;/p&gt;
+&lt;p&gt;23.2. - Máme hotových prvních 10 lekcí kurzu&lt;/p&gt;</content><author><name></name></author><summary type="html">Úvod</summary></entry><entry><title type="html">Java čtvrtek</title><link href="http://localhost:4000/java-Th.html" rel="alternate" type="text/html" title="Java čtvrtek" /><published>2022-09-19T00:00:00+02:00</published><updated>2022-09-19T00:00:00+02:00</updated><id>http://localhost:4000/java-Th</id><content type="html" xml:base="http://localhost:4000/java-Th.html">&lt;h4 id=&quot;popis&quot;&gt;Popis&lt;/h4&gt;
 
-&lt;p&gt;Pro inspiraci a lepší pochopení úkolu se doporučuju podívat na některá řešení z minulého roku:&lt;/p&gt;
+&lt;p&gt;Kroužek je určen pro studenty, kteří se již setkaly s programováním, například v našich kroužcích pro začátečníky nebo pokročilé. Studenti se seznámí s jazykem Java, vývojovým nástrojem Eclipse a objektově orientovaným přístupem k vývoji aplikace.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://studio.code.org/projects/applab/JLlNAmd3VcM0ItZXYBR-TCnfL_wLoTK52etVfogTHfQ&quot; title=&quot;Unikova hra (autor Matěj Chamrád)&quot;&gt;Úniková hra (autor Matěj Chamrád)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://studio.code.org/projects/applab/E80ueH72KM8WSqk1bvPrdwk1IPv1J36EEW_Xhum__Mo&quot; title=&quot;Unikova hra&quot;&gt;Úniková hra (autor Radim Bača)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://swi.cs.vsb.cz/jezek/krouzek-programovani.html&quot;&gt;Obsah lekcí&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;uniklé-únikovky-aneb-výtvory-žáků&quot;&gt;Uniklé únikovky aneb výtvory žáků&lt;/h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;Lektor:&lt;/dt&gt;&lt;dd&gt;David Ježek&lt;/dd&gt;
+&lt;dt&gt;Místnost:&lt;/dt&gt;&lt;dd&gt;EB104&lt;/dd&gt;
+&lt;dt&gt;Čas:&lt;/dt&gt;&lt;dd&gt;16:00&lt;/dd&gt;
+&lt;/dl&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://studio.code.org/projects/applab/7XaWiKNxqFTl6FDNZKfFQiTTIEgT6uEYRpsThBNK57M&quot;&gt;Kuba&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://studio.code.org/projects/applab/7XaWiKNxqFTl6FDNZKfFQoxFv2NyPCsBxfdDUODW3Ck&quot;&gt;Filip&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://studio.code.org/projects/applab/hFCHaNRHdH1gYjVzBrLrerCbJqEhKu_jLUodDdwr1PY&quot;&gt;Kryštof&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://studio.code.org/projects/applab/RrDq0-NX7MlOfB9J4TiEEgwYCDO16D6X_jIAhDHrQK8&quot;&gt;Matěj&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://studio.code.org/projects/applab/kXs9VZtoJhIKdQ5rW349TctUTrPag38uLK62iPKXKSA&quot;&gt;Otmar&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h4 id=&quot;registrace&quot;&gt;Registrace&lt;/h4&gt;
 
-&lt;h1 id=&quot;replit-challenges&quot;&gt;Repl.it challenges&lt;/h1&gt;
-
-&lt;p&gt;V této sekci jsou úkoly pro studenty, kteří již pokročilými prošli a zkoušejí náročnější programy.
-&lt;a href=&quot;/board_game.html&quot;&gt;Klikněte zde&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="side" /><summary type="html">Úvod</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://www.zlepsisitechniku.vsb.cz/program/595&quot;&gt;pokročilí - Java (čtvrtek 16:00)&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Popis</summary></entry></feed>

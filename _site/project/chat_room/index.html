@@ -9,19 +9,21 @@
 }</style>
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Kroužek programování | Stránky kroužku programování na VŠB-Technická univerzita Ostrava</title>
+<title>Chat aplikace (Sockets.io + room) | Kroužek programování</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Kroužek programování" />
+<meta property="og:title" content="Chat aplikace (Sockets.io + room)" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Stránky kroužku programování na VŠB-Technická univerzita Ostrava" />
-<meta property="og:description" content="Stránky kroužku programování na VŠB-Technická univerzita Ostrava" />
-<link rel="canonical" href="http://localhost:4000/404.html" />
-<meta property="og:url" content="http://localhost:4000/404.html" />
+<meta name="description" content="Rozdělení do skupin (room) Cílem tohoto úkolu bude se seznámit s možností rozdělit klienty Socket.io do skupin. V Socket.io se této funkcionalitě říká rooms." />
+<meta property="og:description" content="Rozdělení do skupin (room) Cílem tohoto úkolu bude se seznámit s možností rozdělit klienty Socket.io do skupin. V Socket.io se této funkcionalitě říká rooms." />
+<link rel="canonical" href="http://localhost:4000/project/chat_room/" />
+<meta property="og:url" content="http://localhost:4000/project/chat_room/" />
 <meta property="og:site_name" content="Kroužek programování" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-05-15T12:54:47+02:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Kroužek programování" />
+<meta property="twitter:title" content="Chat aplikace (Sockets.io + room)" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/404.html","description":"Stránky kroužku programování na VŠB-Technická univerzita Ostrava","@type":"WebPage","headline":"Kroužek programování","@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/project/chat_room/","dateModified":"2024-05-15T12:54:47+02:00","datePublished":"2024-05-15T12:54:47+02:00","description":"Rozdělení do skupin (room) Cílem tohoto úkolu bude se seznámit s možností rozdělit klienty Socket.io do skupin. V Socket.io se této funkcionalitě říká rooms.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/project/chat_room/"},"headline":"Chat aplikace (Sockets.io + room)","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -46,7 +48,7 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-      <h1 class="project-name">Kroužek programování</h1>
+      <h1 class="project-name">Chat aplikace (Sockets.io + room)</h1>
       <h2 class="project-tagline">Stránky kroužku programování na VŠB-Technická univerzita Ostrava</h2>
 
       <a href="http://localhost:4000" class="btn">Domů</a><!-- 
@@ -81,26 +83,18 @@
                 </a></nav>
 
       <div id="content" class="main-content" role="main" style="width: 100%;">
-      <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+      <h1 id="rozdělení-do-skupin-room">Rozdělení do skupin (room)</h1>
+<p>Cílem tohoto úkolu bude se seznámit s možností rozdělit klienty Socket.io do skupin. V Socket.io se této funkcionalitě říká <a href="https://socket.io/docs/v3/rooms/">rooms</a>.</p>
 
-<div class="container">
-  <h1>404</h1>
+<blockquote>
+  <p><strong>Úkol 1 - Přidat text box pro zadání room</strong>
+Do <code class="language-plaintext highlighter-rouge">init div</code> přidejte text box pro zadání jména <code class="language-plaintext highlighter-rouge">room</code> (tzn. jméno skupiny ve které bude). Po stisku OK tlačítka se jméno <code class="language-plaintext highlighter-rouge">room</code> pošle na server a na serveru přidejte klienta do skupiny <code class="language-plaintext highlighter-rouge">room</code> s pomocí příkazu <code class="language-plaintext highlighter-rouge">socket.join(room);</code>.</p>
+</blockquote>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+<blockquote>
+  <p><strong>Úkol 2 - Rozesílání zpráv pouze uživatelům v dané room</strong>
+Klient nyní přidá hodnotu <code class="language-plaintext highlighter-rouge">room</code> do JSON zprávy po stisku SEND. Server pošle zprávu pouze na klienty v dané skupině s pomocí příkazu <code class="language-plaintext highlighter-rouge">socket.to(room).emit("chat_message", msg)</code>.</p>
+</blockquote>
 
     </div>
   </div>

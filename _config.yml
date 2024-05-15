@@ -27,6 +27,17 @@ url: "https://krouzekprogramovani.vsb.cz" # the base hostname & protocol for you
 twitter_username: jekyllrb
 github_username: jekyll
 
+collections:
+  classes:
+    output: true
+    permalink: /class/:path/
+  projects:
+    output: true
+    permalink: /project/:path/
+  metas:
+    permalink: /:path/
+    output: true
+
 # Build settings
 # using regular theme
 # theme: minima

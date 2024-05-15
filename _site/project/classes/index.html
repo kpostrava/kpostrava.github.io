@@ -1,0 +1,211 @@
+
+
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8">
+    <style>#ul_top_hypers li {
+    display: inline;
+}</style>
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Classes | Kroužek programování</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Classes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="NodeJS Dnes budeme pracovat s NodeJS. Tzn. vytvořte si lokální soubor tank.js do kterého si budete dávat kód. Program pak jednoduše spustíte přes příkazovou řádku: node tank.js Pokud chcete, vytvořte si na Github prázdnou repository a soubor si případně umístěte." />
+<meta property="og:description" content="NodeJS Dnes budeme pracovat s NodeJS. Tzn. vytvořte si lokální soubor tank.js do kterého si budete dávat kód. Program pak jednoduše spustíte přes příkazovou řádku: node tank.js Pokud chcete, vytvořte si na Github prázdnou repository a soubor si případně umístěte." />
+<link rel="canonical" href="http://localhost:4000/project/classes/" />
+<meta property="og:url" content="http://localhost:4000/project/classes/" />
+<meta property="og:site_name" content="Kroužek programování" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-05-15T12:54:47+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Classes" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/project/classes/","dateModified":"2024-05-15T12:54:47+02:00","datePublished":"2024-05-15T12:54:47+02:00","description":"NodeJS Dnes budeme pracovat s NodeJS. Tzn. vytvořte si lokální soubor tank.js do kterého si budete dávat kód. Program pak jednoduše spustíte přes příkazovou řádku: node tank.js Pokud chcete, vytvořte si na Github prázdnou repository a soubor si případně umístěte.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/project/classes/"},"headline":"Classes","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=cfbd3ff87f7ecf9462589d44f7ca31d5551d6fcf">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+<!-- 
+ -->
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">Classes</h1>
+      <h2 class="project-tagline">Stránky kroužku programování na VŠB-Technická univerzita Ostrava</h2>
+
+      <a href="http://localhost:4000" class="btn">Domů</a><!-- 
+        <a href="https://github.com/kpostrava/kpostrava.github.io" class="btn">View on GitHub</a>
+       -->
+    </header>
+
+    <main>
+
+      <div class="container">
+      <nav class="side-nav">
+                <a href="">
+                  Pokročilí, čt 14:30
+                </a>
+                <a href="">
+                  Pokročilí, čt 16:00
+                </a>
+                <a href="">
+                  Začátečníci, čt 14:30
+                </a>
+                <a href="">
+                  Začátečníci, pá 15:00
+                </a>
+                <a href="">
+                  Začátečníci, čt 16:00
+                </a>
+                <a href="">
+                  Java
+                </a>
+                <a href="">
+                  Lorem Ipsum, čt 16:00
+                </a></nav>
+
+      <div id="content" class="main-content" role="main" style="width: 100%;">
+      <h1 id="nodejs">NodeJS</h1>
+<p>Dnes budeme pracovat s NodeJS. Tzn. vytvořte si lokální soubor <code class="language-plaintext highlighter-rouge">tank.js</code> do kterého si budete dávat kód. Program pak jednoduše spustíte přes příkazovou řádku:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node tank.js
+</code></pre></div></div>
+<p>Pokud chcete, vytvořte si na Github prázdnou repository a soubor si případně umístěte.</p>
+
+<h1 id="tank-třída">Tank třída</h1>
+<p>V následující úloze se seznámíne s pojmem třída. Třída je užitečná pro organizaci kódu a jeho následné pochopení.</p>
+<pre><code class="language-JavaScript">const colors = ["red", "green", "blue", "yellow"];
+
+const min_x = 0
+const max_x = 10
+const min_y = 0
+const max_y = 10
+
+const start_positions = [
+    { x: min_x, y: min_y, dir: 2 },
+    { x: max_x, y: min_y, dir: 2 },
+    { x: min_x, y: max_y, dir: 0 },
+    { x: max_x, y: max_y, dir: 0 },
+];
+
+class Tank {
+    constructor(index, player_name) {
+        this.x = start_positions[index].x;
+        this.y = start_positions[index].y;
+        this.dir = start_positions[index].dir;
+        this.color = colors[index];
+        this.player_name = player_name;
+        this.index = index;
+    }
+    
+    print() {
+        console.log("Tank name: " + this.player_name)
+        console.log("Position: (" + this.x + ", " + this.y + ")");
+    }
+};
+</code></pre>
+<p>V tomto kódu jsme definovali třídu <code class="language-plaintext highlighter-rouge">Tank</code>, která má:</p>
+<ul>
+  <li>Konstruktor</li>
+  <li>Metodu <code class="language-plaintext highlighter-rouge">print</code></li>
+</ul>
+
+<p>Jak konstruktor tak metodu si za chvilku vysvětlíme. Nejprve, ale začneme objektem.</p>
+
+<h2 id="objekt">Objekt</h2>
+<p>Třída sama o sobě nic nedělá. Můžeme o ní uvažovat jako o datovém typu (jako třeba číslo nebo řetězec). Do datového typu nic neuložíme. Abychom mohli s třídou pracovat, musíme vytvořit <strong>objekt</strong>:</p>
+<pre><code class="language-JavaScript">tank1 = new Tank(0, "Radim");
+</code></pre>
+<p>Takto jsme vytvořili objekt typu <code class="language-plaintext highlighter-rouge">Tank</code>, který se jmenuje <code class="language-plaintext highlighter-rouge">tank1</code>. <code class="language-plaintext highlighter-rouge">tank1</code> má několik atributů:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">x</code></li>
+  <li><code class="language-plaintext highlighter-rouge">y</code></li>
+  <li><code class="language-plaintext highlighter-rouge">dir</code> - natočení tanku. 0 je nahoru, 1 doprava. 2 dolů a 3 doleva</li>
+  <li><code class="language-plaintext highlighter-rouge">color</code></li>
+  <li><code class="language-plaintext highlighter-rouge">player_name</code></li>
+  <li><code class="language-plaintext highlighter-rouge">index</code></li>
+</ul>
+
+<p>Slovo <code class="language-plaintext highlighter-rouge">this</code>, které vidíme v konstruktoru znamená něco jako “tento aktuální objekt”. Tzn. že když napíšeme <code class="language-plaintext highlighter-rouge">this.player_name = player_name;</code>, tak u objektu (v našem případě <code class="language-plaintext highlighter-rouge">tank1</code>) nastavíme hodnotu atributu na hodnotu parametru <code class="language-plaintext highlighter-rouge">player_name</code>.</p>
+
+<blockquote>
+  <p><strong>Úkol 1 - Přidání atributů do třídy</strong>
+Přidejte do třídy dva atributy: <code class="language-plaintext highlighter-rouge">lives</code>, <code class="language-plaintext highlighter-rouge">ammo</code>. Oba atributy budou na začátku nastaveny na hodnotu 3.</p>
+</blockquote>
+
+<h2 id="konstruktor">Konstruktor</h2>
+<p>Jako první se u objektu vždy volá konstruktor. Jde o kód, který se provede automaticky. V našem kódu má konstruktor dva parametry <code class="language-plaintext highlighter-rouge">index</code> a <code class="language-plaintext highlighter-rouge">player_name</code>. Při vytváření objektu je tedy nutné tyto parametry předat, což jsme udělali (dali jsme tam hodnoty <code class="language-plaintext highlighter-rouge">0</code> a <code class="language-plaintext highlighter-rouge">"Radim"</code>).</p>
+
+<blockquote>
+  <p><strong>Úkol 2 - Přidání parametrů konstruktoru</strong>
+Přidejte do konstruktoru třídy atribut: <code class="language-plaintext highlighter-rouge">lives</code>. Nastavte daným parametrem atribut <code class="language-plaintext highlighter-rouge">lives</code> u objektu.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Úkol 3 - Nový objekt</strong>
+Vytvořte druhý objekt <code class="language-plaintext highlighter-rouge">tank2</code>, kde konstruktor bude mít parametry <code class="language-plaintext highlighter-rouge">1</code>, <code class="language-plaintext highlighter-rouge">"Petr"</code> a <code class="language-plaintext highlighter-rouge">3</code>.</p>
+</blockquote>
+
+<h2 id="metoda-objektu">Metoda objektu</h2>
+<p>pokud chceme s objektem pracovat typicky se k tomu využívají metody jako je <code class="language-plaintext highlighter-rouge">print</code>.  Metodu zavoláte pomocí následujícího kódu:</p>
+<pre><code class="language-JavaScript">tank1.print();
+</code></pre>
+
+<blockquote>
+  <p><strong>Úkol 4 - Rozšíření výpisu</strong>
+Rozšiřte metodu <code class="language-plaintext highlighter-rouge">print</code>, aby vypsala i další atributy jako je otočení (atribut <code class="language-plaintext highlighter-rouge">dir</code>), barva, životy atd.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Úkol 5 - Nová metoda</strong>
+Napište metodu <code class="language-plaintext highlighter-rouge">move</code>, která posune tank o jedno pole (podle toho kam je otočený). Metoda bude kontrolovat, jestli se tank nedostal mimo vyhrazené pole, které je definováno proměnnými <code class="language-plaintext highlighter-rouge">min_x</code>, <code class="language-plaintext highlighter-rouge">max_x</code>, <code class="language-plaintext highlighter-rouge">min_y</code>, <code class="language-plaintext highlighter-rouge">max_y</code>.</p>
+</blockquote>
+
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+  </footer>
+
+    </main>
+  </body>
+</html>
+<style>
+  .container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  #content{
+    border-left: 1px solid #eee;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  nav a {
+    margin-top: 1rem;
+  }
+</style>

@@ -26,16 +26,16 @@
 
       <a href="{{site.url}}" class="btn">Domů</a>
 
-      {%- if site.posts.size > 0 -%}
+      {%- if site.metas.size > 0 -%}
 
-        {%- for post in site.posts -%}
-            {% if post.categories contains "bar" %}
+        {%- for meta in site.matas -%}
+            {% if meta.categories contains "bar" %}
               <a class="btn" href="{{ post.url | relative_url }}">
-                {{ post.title | escape }}
+                {{ meta.title | escape }}
               </a>
 
                 {%- if site.show_excerpts -%}
-                  {{ post.excerpt }}
+                  {{ meta.excerpt }}
                 {%- endif -%}
             {%- endif -%}
         {%- endfor -%}
@@ -52,16 +52,16 @@
       <div class="container">
       <nav class="side-nav">
 
-          {%- if site.posts.size > 0 -%}
+          {%- if site.classes.size > 0 -%}
 
-          {%- for post in site.posts -%}
-              {% if post.categories contains "side" %}
+          {%- for class in site.classes -%}
+              {% if class.categories contains "side" %}
                 <a href="{{ post.url | relative_url }}">
-                  {{ post.title | escape }}
+                  {{ class.title | escape }}
                 </a>
   
                   {%- if site.show_excerpts -%}
-                    {{ post.excerpt }}
+                    {{ class.excerpt }}
                   {%- endif -%}
               {%- endif -%}
           {%- endfor -%}
