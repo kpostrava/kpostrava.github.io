@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pokročilí čtvrtek"
+title: "22/23-archiv-Pokročilí čtvrtek"
 ---
 
 ## Úvod

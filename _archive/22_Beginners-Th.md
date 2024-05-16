@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Začátečníci čtvrtek"
---- 
+title: "22/23-archiv-Začátečníci čtvrtek"
+---
 
 ## Úvod
 

@@ -4,9 +4,7 @@ title: "Archiv"
 category: "bar"
 ---
 
-## 2022/23
+{% for archived_class in site.archive %}
 
-- [Java čt 15:30]({% post_url 2022-09-19-java-Th %})
-- [Začátečníci čt 14:30]({% post_url 2022-09-19-Beginners-Th %})
-- [Začátečníci pá 14:30]({% post_url 2022-09-19-Beginners-Fri %})
-- [Pokročilí čt 14:30]({% post_url 2022-09-19-Advanced-Th %})
+- [{{ archived_class.title }}]({{ archived_class.url }})
+  {% endfor %}

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Úníkovka"
+category: "codeorg"
+order: 3
 ---
 
 ## Zadání Únikovky

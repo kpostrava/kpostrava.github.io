@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Java čtvrtek"
---- 
+title: "22/23-archiv-Java čtvrtek"
+---
 
 #### Popis
 
@@ -18,7 +18,3 @@ Kroužek je určen pro studenty, kteří se již setkaly s programováním, nap�
 #### Registrace
 
 [pokročilí - Java (čtvrtek 16:00)](https://www.zlepsisitechniku.vsb.cz/program/595)
-
-
-
-

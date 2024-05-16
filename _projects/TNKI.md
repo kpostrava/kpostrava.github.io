@@ -1,6 +1,8 @@
 ---
 layout: post
 title: TNKI
+category: "html"
+order: 8
 ---
 
 ![Logo](/images/logo.png)

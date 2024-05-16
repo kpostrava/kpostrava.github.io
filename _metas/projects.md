@@ -6,17 +6,16 @@ category: "bar"
 
 ### Prostředí code.org
 
-- [Únikovka](project/unikovka)
-- [Násobilka](project/nasobilka)
-- [Dungeon-codeorg](project/dungeon_codeorg)
+{% assign codeorg_projects = site.projects | where: "categories", "codeorg" | sort: "order" %}
+{% for project in codeorg_projects %}
+
+- [{{ project.title }}]({{ project.url }})
+  {% endfor %}
 
 ### HTML, CSS, JS
 
-- [Memory challenge](project/memory_challenge)
-- [Dungeon](project/dungeon)
-- [Board Game](project/board_game)
-- [Git](project/git)
-- [Chat aplikace (Sockets.io)](project/chat)
-- [Chat rooms (Sockets.io)](project/chat_room)
-- [Classes](project/classes)
-- [TNKI](project/TNKI)
+{% assign codeorg_projects = site.projects | where: "categories", "html" | sort: "order" %}
+{% for project in codeorg_projects %}
+
+- [{{ project.title }}]({{ project.url }})
+  {% endfor %}

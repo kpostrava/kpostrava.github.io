@@ -13,17 +13,17 @@
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="Git intro" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Git - Úvod Git nám především umožní jednoduše sdílet soubory (tzn. náš zdrojový kód) s dalšími lidmi. Nicméně funkcí, kterém nám git nabízí je mnohem více. Uložením na git server vytvoříme zálohu našeho projektu na internetu, budeme se moci vracet k předchozím verzím, řešit konflikty v kódu a také budeme moci vytvářet tzv. větve. K práci s gitem budeme z počátku používat command line příkazy, které si dnes vyzkoušíme." />
-<meta property="og:description" content="Git - Úvod Git nám především umožní jednoduše sdílet soubory (tzn. náš zdrojový kód) s dalšími lidmi. Nicméně funkcí, kterém nám git nabízí je mnohem více. Uložením na git server vytvoříme zálohu našeho projektu na internetu, budeme se moci vracet k předchozím verzím, řešit konflikty v kódu a také budeme moci vytvářet tzv. větve. K práci s gitem budeme z počátku používat command line příkazy, které si dnes vyzkoušíme." />
+<meta name="description" content="Git - Úvod" />
+<meta property="og:description" content="Git - Úvod" />
 <link rel="canonical" href="http://localhost:4000/project/git/" />
 <meta property="og:url" content="http://localhost:4000/project/git/" />
 <meta property="og:site_name" content="Kroužek programování" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-05-15T12:54:47+02:00" />
+<meta property="article:published_time" content="2024-05-16T10:15:46+02:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Git intro" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/project/git/","dateModified":"2024-05-15T12:54:47+02:00","datePublished":"2024-05-15T12:54:47+02:00","description":"Git - Úvod Git nám především umožní jednoduše sdílet soubory (tzn. náš zdrojový kód) s dalšími lidmi. Nicméně funkcí, kterém nám git nabízí je mnohem více. Uložením na git server vytvoříme zálohu našeho projektu na internetu, budeme se moci vracet k předchozím verzím, řešit konflikty v kódu a také budeme moci vytvářet tzv. větve. K práci s gitem budeme z počátku používat command line příkazy, které si dnes vyzkoušíme.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/project/git/"},"headline":"Git intro","@context":"https://schema.org"}</script>
+{"headline":"Git intro","dateModified":"2024-05-16T10:15:46+02:00","datePublished":"2024-05-16T10:15:46+02:00","url":"http://localhost:4000/project/git/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/project/git/"},"@type":"BlogPosting","description":"Git - Úvod","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -31,18 +31,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/assets/css/style.css?v=cfbd3ff87f7ecf9462589d44f7ca31d5551d6fcf">
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
-
-<!-- Setup Google Analytics -->
-<!-- 
- -->
-
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
-
-<!-- end custom head snippets -->
-
+    <link rel="stylesheet" href="/assets/css/style.css?v=93f98af6811650191812ee73450360a358bb085a">
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
@@ -51,54 +40,60 @@
       <h1 class="project-name">Git intro</h1>
       <h2 class="project-tagline">Stránky kroužku programování na VŠB-Technická univerzita Ostrava</h2>
 
-      <a href="http://localhost:4000" class="btn">Domů</a><!-- 
-        <a href="https://github.com/kpostrava/kpostrava.github.io" class="btn">View on GitHub</a>
-       -->
-    </header>
+      <a href="http://localhost:4000" class="btn">Domů</a>
+        <a class="btn" href="/archive/">
+          Archiv
+        </a>
+        <a class="btn" href="/projects/">
+          Zadání
+        </a></header>
 
     <main>
 
       <div class="container">
       <nav class="side-nav">
-                <a href="">
+                <a href="/class/23_Advanced_1430/">
                   Pokročilí, čt 14:30
                 </a>
-                <a href="">
+                <a href="/class/23_Advanced_1600/">
                   Pokročilí, čt 16:00
                 </a>
-                <a href="">
+                <a href="/class/23_Beginners_1430/">
                   Začátečníci, čt 14:30
                 </a>
-                <a href="">
+                <a href="/class/23_Beginners_1500/">
                   Začátečníci, pá 15:00
                 </a>
-                <a href="">
+                <a href="/class/23_Beginners_1600/">
                   Začátečníci, čt 16:00
                 </a>
-                <a href="">
-                  Java
-                </a>
-                <a href="">
+                <a href="/class/23_LoremIpsum_1600/">
                   Lorem Ipsum, čt 16:00
+                </a>
+                <a href="/class/23_java-Th/">
+                  Java
                 </a></nav>
 
       <div id="content" class="main-content" role="main" style="width: 100%;">
       <h1 id="git---úvod">Git - Úvod</h1>
+
 <p>Git nám především umožní jednoduše sdílet soubory (tzn. náš zdrojový kód) s dalšími lidmi. Nicméně funkcí, kterém nám git nabízí je mnohem více. Uložením na git server vytvoříme zálohu našeho projektu na internetu, budeme se moci vracet k předchozím verzím, řešit konflikty v kódu a také budeme moci vytvářet tzv. větve. K práci s gitem budeme z počátku používat command line příkazy, které si dnes vyzkoušíme.</p>
 
 <h1 id="github">Github</h1>
+
 <p>Jednomu projektu se na gitu říká <strong>repository</strong>. Repository můžete mít lokální v adresáři, nebo někde na server třeba na <a href="https://github.com/">github.com</a>. Začneme tedy tím, že na <code class="language-plaintext highlighter-rouge">github.com</code>:</p>
+
 <ol>
   <li>vytvoříte účet (např. <code class="language-plaintext highlighter-rouge">hacker_ostravski</code>),</li>
   <li>přihlásíte se do něj</li>
-  <li>a vytvoříte si nové repository se jménem <code class="language-plaintext highlighter-rouge">KeyDown</code>:
-    <ul>
-      <li>Klikneme na <code class="language-plaintext highlighter-rouge">New</code></li>
-      <li>Vyplníme repository name na <code class="language-plaintext highlighter-rouge">KeyDown</code></li>
-      <li>Klikneme na <code class="language-plaintext highlighter-rouge">Create repository</code></li>
-    </ul>
-  </li>
+  <li>a vytvoříte si nové repository se jménem <code class="language-plaintext highlighter-rouge">KeyDown</code>:</li>
 </ol>
+
+<ul>
+  <li>Klikneme na <code class="language-plaintext highlighter-rouge">New</code></li>
+  <li>Vyplníme repository name na <code class="language-plaintext highlighter-rouge">KeyDown</code></li>
+  <li>Klikneme na <code class="language-plaintext highlighter-rouge">Create repository</code></li>
+</ul>
 
 <p><img src="images/git_new.png" alt="Vytváření nového repository v github.com" /></p>
 
@@ -110,33 +105,35 @@
 <h2 id="přidávání-změn">Přidávání změn</h2>
 
 <p>Otevřete příkazovou řádku (v nabídce Start napište <code class="language-plaintext highlighter-rouge">cmd</code>) a přesuňte se do adresáře <code class="language-plaintext highlighter-rouge">c:\users\kp\git</code>. Následně proveďte stažení repository do lokálního adresáře. Adresář se bude jmenovat stejně jako repository.</p>
+
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>c:<span class="se">\u</span>sers<span class="se">\k</span>p<span class="se">\g</span>it
 git clone https://github.com/hacker_ostravski/KeyDown
 <span class="nb">cd </span>KeyDown
 </code></pre></div></div>
 
 <p>Nyní se nacházíme v naší lokální kopií repository <code class="language-plaintext highlighter-rouge">KeyDown</code>. Nyní se pustíme do vytvoření nového souboru, jeho umístění do lokálního repository a jeho následné zkopírování na <code class="language-plaintext highlighter-rouge">github.com</code>.</p>
+
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="c"># Moje nove repository &gt; readme.md</span>
 git add readme.md
 git commit <span class="nt">-m</span> <span class="s2">"Muj prvni commit"</span>
 git push
 </code></pre></div></div>
 
-<p><strong>Tuto posloupnost <code class="language-plaintext highlighter-rouge">git</code> příkazů si zapamatujte. Budete ji používat vemi často.</strong> Na následujícím obrázku jsou tyto příkazy vyjádřeny schématicky. 
+<p><strong>Tuto posloupnost <code class="language-plaintext highlighter-rouge">git</code> příkazů si zapamatujte. Budete ji používat vemi často.</strong> Na následujícím obrázku jsou tyto příkazy vyjádřeny schématicky.
 <img src="images/git_basic.png" alt="Základní příkazy" /></p>
 
 <p>Po provedení příkazů se přepněte do prohlížeče a znovu si zobrazte svoje repository na <code class="language-plaintext highlighter-rouge">github.com</code>. Nyní už by mělo obsahovat jeden soubor <code class="language-plaintext highlighter-rouge">readme.md</code>, který jsme tam přidali. Také se na stránce objevil popis, který odpovídá textu v <code class="language-plaintext highlighter-rouge">readme.md</code>. Git servery vždy automaticky zobrazují obsah <code class="language-plaintext highlighter-rouge">readme.md</code> na stránce repository.</p>
 
 <blockquote>
   <p><strong>Úkol 1:</strong>
-Ve svém počítači proveďte změnu <code class="language-plaintext highlighter-rouge">readme.md</code>  (cokoli do něj dopište) a následně tuto změnu propagujte do repository. Použijte stejnou posloupnost git příkazů (tzn. <code class="language-plaintext highlighter-rouge">add</code>, <code class="language-plaintext highlighter-rouge">commit</code>, <code class="language-plaintext highlighter-rouge">push</code>).</p>
+Ve svém počítači proveďte změnu <code class="language-plaintext highlighter-rouge">readme.md</code> (cokoli do něj dopište) a následně tuto změnu propagujte do repository. Použijte stejnou posloupnost git příkazů (tzn. <code class="language-plaintext highlighter-rouge">add</code>, <code class="language-plaintext highlighter-rouge">commit</code>, <code class="language-plaintext highlighter-rouge">push</code>).</p>
 </blockquote>
 
 <p>Příkaz <code class="language-plaintext highlighter-rouge">git add</code> jsme využili k přidávání změn v jednom souboru. Nicméně tento příkaz dokáže přidat i změny z více soborů najednou, takže jej nemusíme spouštět pro každý soubor zvlášť. Místo jména souboru dáme hvězdičku, která představuje libovolný řetězec.</p>
 
 <blockquote>
   <p><strong>Úkol 2:</strong>
-Přidejte do repository soubory <code class="language-plaintext highlighter-rouge">index.html</code>, <code class="language-plaintext highlighter-rouge">script.js</code>, a <code class="language-plaintext highlighter-rouge">style.css</code> z board game, kterou jste vytvořili v repl.it.  Následně tyto změny propagujte do lokální repository a pošlete na Github. Použijte stejnou posloupnost git příkazů (tzn. <code class="language-plaintext highlighter-rouge">add</code>, <code class="language-plaintext highlighter-rouge">commit</code>, <code class="language-plaintext highlighter-rouge">push</code>).</p>
+Přidejte do repository soubory <code class="language-plaintext highlighter-rouge">index.html</code>, <code class="language-plaintext highlighter-rouge">script.js</code>, a <code class="language-plaintext highlighter-rouge">style.css</code> z board game, kterou jste vytvořili v repl.it. Následně tyto změny propagujte do lokální repository a pošlete na Github. Použijte stejnou posloupnost git příkazů (tzn. <code class="language-plaintext highlighter-rouge">add</code>, <code class="language-plaintext highlighter-rouge">commit</code>, <code class="language-plaintext highlighter-rouge">push</code>).</p>
 </blockquote>
 
 <p>Pokud chceme vložit do staging area změny, které jsme provedli v souborech, které už v repository jsou, pak můžeme využít příkaz <code class="language-plaintext highlighter-rouge">git add -u</code>.</p>
@@ -147,10 +144,12 @@ Přidejte do lokálního adresáře soubor <code class="language-plaintext highl
 </blockquote>
 
 <h2 id="přidání-spolupracovníka-collaborators">Přidání spolupracovníka (collaborators)</h2>
-<p>Pro přidání spolupracovníka přejdeme opět na stránku  https://github.com/hacker_ostravski/KeyDow. Vybereme nahoře záložku <code class="language-plaintext highlighter-rouge">settings</code> a pak vlevo <code class="language-plaintext highlighter-rouge">collaborators</code>. Otevře se nám okno, kde můžeme přidat uživatele jak vidíme na obrázku. Přidejte uživatele se kterým jste domluveni (on vás také přidá).
+
+<p>Pro přidání spolupracovníka přejdeme opět na stránku https://github.com/hacker_ostravski/KeyDow. Vybereme nahoře záložku <code class="language-plaintext highlighter-rouge">settings</code> a pak vlevo <code class="language-plaintext highlighter-rouge">collaborators</code>. Otevře se nám okno, kde můžeme přidat uživatele jak vidíme na obrázku. Přidejte uživatele se kterým jste domluveni (on vás také přidá).
 <img src="images/git_colaborator.png" alt="collaborators" /></p>
 
 <p>Nyní máme přístup k repository druhého uživatele. Řekněme, že jde o uživatele <code class="language-plaintext highlighter-rouge">polrajch</code>. Nyní chcete přistoupit k jeho repository a přidat mu do souboru <code class="language-plaintext highlighter-rouge">readme.md</code> nějaké změny. Opět repository stáhneme do lokálního adresesáře provedeme změny a ty následně potvrdíme posloupností příkazů <code class="language-plaintext highlighter-rouge">add</code>, <code class="language-plaintext highlighter-rouge">commit</code>, <code class="language-plaintext highlighter-rouge">push</code>.</p>
+
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone http:<span class="se">\\</span>gitbub.com<span class="se">\p</span>olrajch<span class="se">\K</span>eyDown polrajch_keydown
 <span class="nb">cd </span>polrajch_keydown
 <span class="c"># provedeme změnu v souboru readme.md</span>
@@ -169,6 +168,7 @@ Zkuste se zamyslet, v jakých chvílích by jste měli příkaz <code class="lan
 </blockquote>
 
 <h2 id="konflikty">Konflikty</h2>
+
 <p>Konflikt je situace, kdy vy i druhý uživatel provede změny ve stejném souboru.</p>
 
 <p>Zkusíte si tedy vyvolat konflikt v lokálním repository sami tak, že si repository stáhneme podruhé do jiného adresáře. Otevřete si druhé command line okno a proveďte následující.</p>
@@ -180,9 +180,11 @@ cd keydown2
 <p>Máme tedy repository lokálně dvakrát. Jednou v adresáři <code class="language-plaintext highlighter-rouge">KeyDown</code> a podruhé v adresáři <code class="language-plaintext highlighter-rouge">KeyDown2</code>.</p>
 
 <h3 id="automaticky-řešené-konflikty">Automaticky řešené konflikty</h3>
+
 <p>Zkusíme nyní v repository vyvolat konflikt. Zkusíme začít konfliktem, který by měl git vyřešit sám, bez nutnosti zásahu uživatele.</p>
 
 <p>Provedeme postupně změny ve <code class="language-plaintext highlighter-rouge">script.js</code> souborech. V prvním adresáři zapíšete komentář na začátek souboru a v tomto adresáři provedete <code class="language-plaintext highlighter-rouge">add</code>, <code class="language-plaintext highlighter-rouge">commit</code>, <code class="language-plaintext highlighter-rouge">push</code>.</p>
+
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># provedeme změnu v souboru script.js (dáme komentář na začátek script.js)</span>
 git add <span class="nt">-u</span>
 git commit <span class="nt">-m</span> <span class="s2">"script.js Komentar pridan na zacatek"</span>
@@ -190,48 +192,55 @@ git push
 </code></pre></div></div>
 
 <p>V druhém adresáři provedeme změnu ve <code class="language-plaintext highlighter-rouge">script.js</code> tak, že přidáme komentář na konec. V druhém adresáři nyní provedem příkazy <code class="language-plaintext highlighter-rouge">add</code>, <code class="language-plaintext highlighter-rouge">commit</code></p>
+
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nt">-u</span>
 git commit <span class="nt">-m</span> <span class="s2">"script.js Komentar pridan na konec"</span>
 </code></pre></div></div>
 
 <p>Pokud se nyní pokusíme provést příkaz <code class="language-plaintext highlighter-rouge">push</code>, tak se příkaz neprovede, protože na git je nyní verze, která je o jeden commit dále něž je tato lokální verze. Tzn. musíme v druhém adresáři před provedením <code class="language-plaintext highlighter-rouge">git push</code> provést nejprve <code class="language-plaintext highlighter-rouge">git pull</code>.</p>
+
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git pull
 </code></pre></div></div>
 
-<p>Obě změny jsou ve stejném souboru (tzn. jsou konfliktní). Nicméně git si s nimi poradí, protože změny jsou v jiných částech souboru a obě verze spojí do nové verze, kde jsou oba komentáře. 
+<p>Obě změny jsou ve stejném souboru (tzn. jsou konfliktní). Nicméně git si s nimi poradí, protože změny jsou v jiných částech souboru a obě verze spojí do nové verze, kde jsou oba komentáře.
 <img src="images/git_automatic_merge.png" alt="automaticky vyřešený konflikt" /></p>
 
 <p>Nyní změnu pošlete na Github respository s pomocí <code class="language-plaintext highlighter-rouge">push</code>.</p>
+
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push
 </code></pre></div></div>
 
 <h3 id="konflikty-řešené-uživatelem">Konflikty řešené uživatelem</h3>
+
 <p>Druhá situace, kterou vyzkoušíme, je komplikovanější. Může se nám stát, že vznikne konflikt ve stejném řádku souboru a git si s tím nebude vědět rady. Nejprve tedy v obou adresářích provedeme <code class="language-plaintext highlighter-rouge">git pull</code>.</p>
+
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git pull
 </code></pre></div></div>
 
 <p>Nyní v obou adresářích změníme text v úvodním komentáři. V prvním adresáři dáte <code class="language-plaintext highlighter-rouge">add</code>, <code class="language-plaintext highlighter-rouge">commit</code>, <code class="language-plaintext highlighter-rouge">push</code>. V druhém adresáři dáte následující příkazy.</p>
+
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nt">-u</span>
 git commit <span class="nt">-m</span> <span class="s2">"script.js upraven komentar prvniho radku"</span>
 git pull
 </code></pre></div></div>
 
 <p>Příkaz <code class="language-plaintext highlighter-rouge">git pull</code> povede na konflikt, který je nutné vyřešit ručně. Když dáme příkaz <code class="language-plaintext highlighter-rouge">git status</code> uvdíme, že soubor je v konfliktním stavu. Při otevření souboru v libovolném textovém editoru vidíme poněkud nepřehledný obsah, který neodpovídá ani jedné verzi souboru. Pro efektivní vyřešení konfliktu využijeme Visual Studio Code.</p>
+
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>code <span class="nb">.</span>
 </code></pre></div></div>
 
 <p>Ve VSCode bychom u souboru s git konfliktem měli vidět barevně vyznačené konfliktní řádky a vpravo dole tlačítko “Resolve in merge editor”, které nám umožní konflikty efektivně vyřešit s pomocí tzv. 3-way merge monitor.
 <img src="images/vscode.png" alt="VSCode" /></p>
 
-<p>3-way merge monitor nám umožní akceptovat buď je jednu z vybraných změn, nebo akteptovat obě. Možné je také to, že vytvoříme verzi úplně novou vzniklou spojením předchozích dvou. V editoru máme tři okna. Dvě horní jsou pro lokální verzi a pro vzdálenou verzi. Dolní okno je výsledek spojení. 
+<p>3-way merge monitor nám umožní akceptovat buď je jednu z vybraných změn, nebo akteptovat obě. Možné je také to, že vytvoříme verzi úplně novou vzniklou spojením předchozích dvou. V editoru máme tři okna. Dvě horní jsou pro lokální verzi a pro vzdálenou verzi. Dolní okno je výsledek spojení.
 <img src="images/mergeeditor.png" alt="mergeeditor" /></p>
 
 <p>Nad každým konfliktem můžeme v obou hodních oknech vidět tlačítka <code class="language-plaintext highlighter-rouge">Accept Incomming</code>, <code class="language-plaintext highlighter-rouge">Accept Combination</code>, nebo <code class="language-plaintext highlighter-rouge">Accept Current</code>. Pokud na některé klikneme, pak to odpovídajícím způsobem upraví kód v dolním okně. Vyzkoušejte. Jakmile budete mít všechny konflikty vyřešeny, tak klikněte na tlačítko <code class="language-plaintext highlighter-rouge">Complete Merge</code>.</p>
 
 <p>Nyní je konflikt vyřešen a git nám dovolí provést <code class="language-plaintext highlighter-rouge">push</code>.</p>
+
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push
 </code></pre></div></div>
-
 
     </div>
   </div>
@@ -243,6 +252,7 @@ git pull
     </main>
   </body>
 </html>
+
 <style>
   .container{
     display: flex;

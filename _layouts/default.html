@@ -15,7 +15,6 @@
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    {% include head-custom.html %}
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
@@ -26,25 +25,15 @@
 
       <a href="{{site.url}}" class="btn">Domů</a>
 
-      {%- if site.metas.size > 0 -%}
+      {%- for meta in site.metas -%}
+      {% if meta.categories contains "bar" %}
+        <a class="btn" href="{{ meta.url | relative_url }}">
+          {{ meta.title | escape }}
+        </a>
+        {%- endif -%}
 
-        {%- for meta in site.matas -%}
-            {% if meta.categories contains "bar" %}
-              <a class="btn" href="{{ post.url | relative_url }}">
-                {{ meta.title | escape }}
-              </a>
-
-                {%- if site.show_excerpts -%}
-                  {{ meta.excerpt }}
-                {%- endif -%}
-            {%- endif -%}
         {%- endfor -%}
 
-      {%- endif -%}
-
-     <!-- {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %} -->
     </header>
 
     <main>
@@ -52,22 +41,14 @@
       <div class="container">
       <nav class="side-nav">
 
-          {%- if site.classes.size > 0 -%}
-
           {%- for class in site.classes -%}
               {% if class.categories contains "side" %}
-                <a href="{{ post.url | relative_url }}">
+                <a href="{{ class.url | relative_url }}">
                   {{ class.title | escape }}
                 </a>
-  
-                  {%- if site.show_excerpts -%}
-                    {{ class.excerpt }}
-                  {%- endif -%}
               {%- endif -%}
           {%- endfor -%}
-  
-        {%- endif -%}
-          
+
       </nav>
 
       <div id="content" class="main-content" role="main" style="width: 100%;">
@@ -82,6 +63,7 @@
     </main>
   </body>
 </html>
+
 <style>
   .container{
     display: flex;

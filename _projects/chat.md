@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Chat aplikace (Sockets.io)
-tags:
-  - git
+category: "html"
+order: 5
 ---
 
 # Základní komunikace

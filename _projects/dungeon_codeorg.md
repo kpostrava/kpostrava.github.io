@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Dungeon"
+category: "codeorg"
+order: 4
 ---
 
 # Program "Dungeon"
