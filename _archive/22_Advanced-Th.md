@@ -30,7 +30,7 @@ V prvním půl roce znalost těchto konceptů ještě dále prohloubíme a zejm�
 
 Každý ovládací prvek má své unikátní jméno. Na následujícím obrázku vidíme aplikaci se třemi ovládacími prvky:
 
-![kids](images/applab_basic.png)
+![kids](/images/applab_basic.png)
 
 1. TextBox - jak vidíme na obrázku jméno textboxu je `text_input1`. Jméno se objeví, když v AppLabu najedeme na ovládací prvek myší.
 2. Tlačítko - jeho jméno je `button_ok`.

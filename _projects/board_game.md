@@ -17,9 +17,95 @@ Základem celé aplikace je dvourozměrné pole `game_board` (10x10). K jednomu 
 game_board[1][0] = 10
 ```
 
-uloží na první řádek a nultý sloupec hodnotu 10. Jednotlivé políčka v `game_board` jsou nastavená na hodnotu nula nebo jedna. Hodnota jedna má vyjadřovat, že na dané pozici nachází překážka.
+uloží na první řádek a nultý sloupec hodnotu 10. Jednotlivé políčka v `game_board` jsou nastavená na hodnotu nula nebo jedna. Hodnota jedna má vyjadřovat, že se na dané pozici nachází překážka.
 
 Dále se v programu nachází proměnné `x` a `y`, které uchovávají pozici hráče. Hráč je ovládán šipkami a posun v poli je implementován ve funkci `moveCircle`.
+
+## Vytvoření herní mapy
+
+Potřebujeme projít každý prvkek v dvourrozměrném poli, které reprezentuje herní mapu. Jelikož známe velikost tohoto pole, můžeme použít cyklus `for`.
+
+```js
+for (let index = 0; index < game_board.length; index++) {
+  // něco udělej
+}
+```
+
+Jak můžete vidět, udáváme cyklu `for` při jeho vytváření tři údaje.
+
+- `let index = 0` - vytvoříme si novou proměnnou, do které ukládáme průběžný stav cyklu.
+- `index < game_board.length` - podmínka za jaké má cyklus pokračovat
+- `index++` - na konci každého cyklu zvýší hodnotu `index` o jedna (index = index + 1)
+
+Ukažme si to na příkladu, chceme 10x vypsat "ahoj".
+
+```js
+for (let index = 0; index < 10; index++) {
+  console.log("ahoj");
+}
+```
+
+Nyní zkusíme tento cyklus použít k vypsání prvků v poli. Nejdříve si vypíšeme pouze jednotlivé řádky.
+
+```js
+for (let radek = 0; radek < game_board.length; radek++) {
+  console.log(game_board[radek]);
+}
+```
+
+Cheme ale vypsat každý prvek zvlášť. Použijeme tedy drůhý `for` pro vypsání prvků z každého řádku.
+
+```js
+for (let radek = 0; radek < game_board.length; radek++) {
+  for (let sloupec = 0; sloupec < game_board.length; sloupec++) {
+    console.log(game_board[radek][sloupec]);
+  }
+}
+```
+
+Herní mapu reprezentujeme, jako HTML tabulku. Stejně jako naše 2d pole je tabulka složena z řádků a sloupců. Konkrétní prvek v poli nazýváme "buňka".
+
+```js
+const radek = document.createElement("tr");
+const bunka = document.createElement("td"); // skládáním za sebe tvoříme sloupce
+```
+
+HTML elementům můžeme přidávat vlastnosti. Třídu můžeme přidat pomocí metody `classList.add()`.
+
+```js
+square.classList.add("square");
+```
+
+Vytvoření elementu však nestačí pro jeho zobrazení. Na stránku ho přidáme pomocí metody `appendChild()`;
+
+```js
+bunka.appendChild(square);
+```
+
+Herní mapa je čtvercová => počet řádků je roven počtu sloupců. S těmito znalostmi jsme nyní schopni vytvořit herní mapu.
+
+```js
+for (let radek = 0; radek < game_board.length; radek++) {
+  const radek_tabulky = document.createElement("tr"); // Vytvoříme nový řádek tabulky
+
+  for (let sloupec = 0; sloupec < game_board.length; sloupec++) {
+    const bunka_tabulky = document.createElement("td"); // Vytvoříme novou buňku tabulky
+
+    radek_tabulky.appendChild(cell); // Přidáme novou buňku do řádku tabulky
+
+    if (game_board[i][j] == 1) {
+      // Pokud se na této pozici nachází překážka
+
+      const square = document.createElement("div"); // Vytvoříme element div, který slouží jako zábrana
+
+      square.classList.add("square"); // Přidáme divu třídu pro pozdější nastavení jeho vlastností
+
+      cell.appendChild(square); // Přidáme div do buňky tabulky
+    }
+  }
+  board.appendChild(row); // přidáme celý řádek do tabulky
+}
+```
 
 ## Úkoly
 
