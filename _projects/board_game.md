@@ -7,7 +7,7 @@ order: 4
 
 # Board game
 
-Nejprve se [připojte do Lorem Ipsum týmu](https://replit.com/teams/join/xvtsjzaadrqmanaknpncvlanyelasxgw-lorem-ipsum-team) na Repl.it, kde by jste měli nalézt HTML5 verzi programu, který se nazývá "BoardGame 2".
+Nejprve si forkněte z [githubu](https://github.com/kpostrava/board_game) repozitář s výchozím bodem k tomuto projektu.
 
 ## Popis programu
 
@@ -53,7 +53,7 @@ for (let radek = 0; radek < game_board.length; radek++) {
 }
 ```
 
-Cheme ale vypsat každý prvek zvlášť. Použijeme tedy drůhý `for` pro vypsání prvků z každého řádku.
+Cheme ale vypsat každý prvek zvlášť. Použijeme tedy druhý `for` pro vypsání prvků z každého řádku.
 
 ```js
 for (let radek = 0; radek < game_board.length; radek++) {
