@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Nasobilka
+title: Nábosilka
 category: "codeorg"
 order: 1
 ---
 
-## Násobilka
+## Nábosilka
