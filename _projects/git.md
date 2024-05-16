@@ -2,7 +2,7 @@
 layout: post
 title: Git intro
 category: "html"
-order: 3
+order: 1
 ---
 
 # Git - Úvod
