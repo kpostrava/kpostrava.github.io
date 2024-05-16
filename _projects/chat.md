@@ -42,7 +42,7 @@ Klient je pouze `index.html`. Takže otevřete `index.html` ve dvou oknech, v je
 ## Jak to funguje
 
 Nyní se podrobněji podíváme na to jak to funguje. Základem řešení jsou zprávy posílané mezi jednotlivými aktéry (klient, server). Schematicky je to znázorněno na následujícím obrázku. Máme server ke kterému se připojili dva klienti. Server má seznam připojených klientů a když obdrží zprávu, tak ji rozešle všem.
-![zprávy v socket.io](images/socket_io1.png)
+![zprávy v socket.io](/images/socket_io1.png)
 
 ### Klient
 
@@ -70,7 +70,7 @@ io.on('connection', (socket) => {
 ```
 
 Můžeme tomu rozumět tak, při vytvoření nového socket spojení (připojení nového klienta) se spustí kód handleru, který následně obsluhuje požadavky klienta. Pokud server provede `io.emit` pak se zpráva rozešle všem klientům, jak to deomnstruje následující obrázek.
-![Zaslaní zprávy s pomocí io.emit](images/socket_io2.png)
+![Zaslaní zprávy s pomocí io.emit](/images/socket_io2.png)
 
 > **Úkol 1 - odeslání zprávy jen ostatním klientům**
 > Nyní celý program funguje tak, že pokud klient odešle zprávu `'chat_message'`, pak mu zprávu pošle server zpět. Nicméně to je poměrně zbytečné. V Sockets.io [existuje možnost](https://socket.io/docs/v3/broadcasting-events/) rozeslat zprávu všem ostatním kromě klienta, který zprávu inicioval s pomocí `socket.broadcast.emit('chat_message' , msg)`. Přepište tedy celý program, aby se použil `broadcast.emit`.

@@ -7,8 +7,6 @@ order: 4
 
 # Program "Dungeon"
 
-1. [Code.org](https://studio.code.org/projects/applab/vIsbWwNQW8jfWnvNfDna67jgp1qItTw7JRT4A5yCft8) verze
-
 Hra probíhá v kolech a funguje následujícím způsobem:
 
 1. Hráč se pohybuje v jednoduchém dungeonu se třemi pozicemi
@@ -21,7 +19,7 @@ Hra probíhá v kolech a funguje následujícím způsobem:
 
 Pro přechod mezi obrazovkami každé přidělíme index a vytvoříme čtyři pole - pro každý směr pohybu jedno. Káždé z těcho polí bude mít počet prvků roven počtu obrazovek.
 
-![Diagram_obrazovek_dungeon](images/dungeon_diagram.png)
+![Diagram_obrazovek_dungeon](/images/dungeon_diagram.png)
 
 Začínáme na indexu 0 <=> na obrazovce 0. Z této obrazovky se můžeme posunout pouze v pravo. Tímto pohybem se dostaneme na obrazovku 1 <=> index nastavíme na 1. Z obrázku je to zřejmé. Nyní je potřeba zakódovat tuto informaci pomocí polí, abychom s ní pohli dále pracovat.
 

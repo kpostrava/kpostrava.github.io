@@ -7,8 +7,6 @@ order: 2
 
 # Program "Memory challenge"
 
-1.  [Code.org](https://studio.code.org/projects/applab/mbu_rC06TSKqfiraKegwSNAtKuePJ-c8Ivh79xyE7-I) verze hry
-
 Hra probíhá v kolech a funguje následujícím způsobem:
 
 1. Hráč si má za pět sekund zapamatovat pět čísel.
