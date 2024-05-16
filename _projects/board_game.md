@@ -91,19 +91,19 @@ for (let radek = 0; radek < game_board.length; radek++) {
   for (let sloupec = 0; sloupec < game_board.length; sloupec++) {
     const bunka_tabulky = document.createElement("td"); // Vytvoříme novou buňku tabulky
 
-    radek_tabulky.appendChild(cell); // Přidáme novou buňku do řádku tabulky
+    radek_tabulky.appendChild(bunka_tabulky); // Přidáme novou buňku do řádku tabulky
 
-    if (game_board[i][j] == 1) {
+    if (game_board[radek][sloupec] == 1) {
       // Pokud se na této pozici nachází překážka
 
       const square = document.createElement("div"); // Vytvoříme element div, který slouží jako zábrana
 
       square.classList.add("square"); // Přidáme divu třídu pro pozdější nastavení jeho vlastností
 
-      cell.appendChild(square); // Přidáme div do buňky tabulky
+      bunka_tabulky.appendChild(square); // Přidáme div do buňky tabulky
     }
   }
-  board.appendChild(row); // přidáme celý řádek do tabulky
+  board.appendChild(radek_tabulky); // přidáme celý řádek do tabulky
 }
 ```
 
