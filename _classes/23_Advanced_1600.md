@@ -35,7 +35,3 @@ Pro inspiraci a lepší pochopení úkolu se doporučuju podívat na některá �
 - [Matěj](https://studio.code.org/projects/applab/RrDq0-NX7MlOfB9J4TiEEgwYCDO16D6X_jIAhDHrQK8)
 - [Otmar](https://studio.code.org/projects/applab/kXs9VZtoJhIKdQ5rW349TctUTrPag38uLK62iPKXKSA)
 
-# Repl.it challenges
-
-V této sekci jsou úkoly pro studenty, kteří již pokročilými prošli a zkoušejí náročnější programy.
-[Klikněte zde](project/board_game)
