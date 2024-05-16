@@ -11,8 +11,10 @@ Hra probíhá v kolech a funguje následujícím způsobem:
 
 1. Hráč si má za pět sekund zapamatovat pět čísel.
 2. Pak je má vepsat do textboxu:
-   a. Pokud uhodne, tak další kolo si bude muset zkusit zapamatovat šest čísel za šest sekund.
-   b. Pokud neuspěje, tak se mu ukážou čtyři čísla na čtyři sekundy.
+
+- a. Pokud uhodne, tak další kolo si bude muset zkusit zapamatovat šest čísel za šest sekund.
+- b. Pokud neuspěje, tak se mu ukážou čtyři čísla na čtyři sekundy.
+
 3. Hríč vyhraje, pokud si v pěti kolech zapamatuje číslo správně.
 4. Hráč prohraje pokud dříve pětkrát číslo napíše špatně.
 

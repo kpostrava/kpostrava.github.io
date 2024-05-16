@@ -7,7 +7,7 @@ order: 3
 
 # Program "Dungeon"
 
-Nejprve se [připojte do Lorem Ipsum týmu](https://replit.com/teams/join/xvtsjzaadrqmanaknpncvlanyelasxgw-lorem-ipsum-team) na Repl.it, kde by jste měli nalézt HTML5 verzi Dungeonu. U této verze zkuste následující úkol:
+Nejprve si forkněte z [githubu](https://github.com/kpostrava/dungeon) repozitář s výchozím bodem k tomuto projektu.
 
 - S pomocí chatGPT změňte rozložení tlačítek, aby se více podobalo rozložení v code.org.
 - Implementujte ovládání hry tlačítky klávesnice.
