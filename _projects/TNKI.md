@@ -2,7 +2,7 @@
 layout: post
 title: TNKI
 category: "html"
-order: 8
+order: 9
 ---
 
 ![Logo](/images/logo.png)
@@ -14,6 +14,22 @@ TNKI je real-time multiplayerová hra založená na websocketech. Avšak, proto�
 Repozitář: [https://github.com/kpostrava/tnki](https://github.com/kpostrava/tnki)
 
 💡 Pro snadnější oriantaci v kódu si do vscode nainstaluje rozšíření “better comments”: [https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
+
+## Spuštění serveru
+
+Je zapotřebí z githubu stáhnout výchozí bod k programu. Domluvte se v týmu, kdo vytvoří společný fork a všichni si jej naklonujte. Pomocí `npm` následně nainstalujte potřebné balíčky. Server spusťte pomocí `nodemon`, tato služba umožňuje automatický restart serveru při změně souboru.
+
+```bash
+git clone <URL_forknutého_repozitáře>
+
+cd <Cesta_k_uloženému_repozitáři>/server
+
+npm i
+
+npm i nodemon -g
+
+npx nodemon main.js
+```
 
 ## Popis kódu
 
