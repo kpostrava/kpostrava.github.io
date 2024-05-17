@@ -18,5 +18,12 @@ Místnost: EB207
 
 ## Práce studentů
 
-[Flappy bee - Tadeáš Pokluda](https://studio.code.org/projects/spritelab/Sg8siG7rtXs-GRrFQTliKX07EkalM1F92-qkDmGiNXw)  
-[Minimus - Tadeáš Pokluda](https://studio.code.org/projects/spritelab/patnfGPEMFW1Y-kKkzzHo0qvAVZk3vBnPZiejBlWYxo)
+[Tadeáš Pokluda - Flappy bee](https://studio.code.org/projects/spritelab/Sg8siG7rtXs-GRrFQTliKX07EkalM1F92-qkDmGiNXw)
+
+[Tadeáš Pokluda - Minimus](https://studio.code.org/projects/spritelab/patnfGPEMFW1Y-kKkzzHo0qvAVZk3vBnPZiejBlWYxo)
+
+[Daniel Tulis - Ruleta](https://studio.code.org/projects/applab/sPEEmPOKSNoSDo2zrgbIGa7OS9pS7NnfgHBU9DkTtNs)
+
+[Lukáš Kresta - Automat](https://studio.code.org/projects/applab/kfpQPeeTn6H7YDITnQr_7pwR_5qa0gWLsTeyqwV2wKo)
+
+[Daniel Jemelka - Kolo štěsí](https://studio.code.org/projects/applab/syrWVgXqDww5kd4yXrWb5NN-co9MGEB3u8g3cMSNyao)
