@@ -15,5 +15,5 @@ Místnost: EB207
 Čas: 16:00
 
 # TNKI Projekt
-- [Repository]([https://github.com/bnkstepan/tnki)
+- [Repository](https://github.com/bnkstepan/tnki)
 - [TODO list ](https://docs.google.com/spreadsheets/d/1K_qNQnHXHnmPrm9YNK0m9No6qgf31YW1eizo7DB5J0U/edit?usp=sharing)
