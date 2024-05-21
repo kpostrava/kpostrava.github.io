@@ -11,7 +11,7 @@ Nejprve si forkněte z [githubu](https://github.com/kpostrava/board_game) repozi
 
 ## Popis programu
 
-Základem celé aplikace je dvourozměrné pole `game_board` (10x10). K jednomu prvku pole přistoupíme s pomocí dvou hranatých závorek. Tzn. například:
+Základem celé aplikace je dvourozměrné pole `game_board` (10x10). K jednomu prvku pole přistoupíme pomocí dvou hranatých závorek. Tzn. například:
 
 ```JavaScript
 game_board[1][0] = 10
@@ -76,7 +76,7 @@ HTML elementům můžeme přidávat vlastnosti. Třídu můžeme přidat pomocí
 square.classList.add("square");
 ```
 
-Vytvoření elementu však nestačí pro jeho zobrazení. Na stránku ho přidáme pomocí metody `appendChild()`;
+Vytvoření elementu však nestačí pro jeho zobrazení. Na stránku ho přidáme pomocí metody `appendChild()`
 
 ```js
 bunka.appendChild(square);

@@ -17,13 +17,13 @@ Hra probíhá v kolech a funguje následujícím způsobem:
 
 ## Logika změny obrazovky
 
-Pro přechod mezi obrazovkami každé přidělíme index a vytvoříme čtyři pole - pro každý směr pohybu jedno. Káždé z těcho polí bude mít počet prvků roven počtu obrazovek.
+Pro přechod mezi obrazovkami, každé přidělíme index a vytvoříme čtyři pole - pro každý směr pohybu jedno. Káždé z těcho polí bude mít počet prvků roven počtu obrazovek.
 
 ![Diagram_obrazovek_dungeon](/images/dungeon_diagram.png)
 
-Začínáme na indexu 0 <=> na obrazovce 0. Z této obrazovky se můžeme posunout pouze v pravo. Tímto pohybem se dostaneme na obrazovku 1 <=> index nastavíme na 1. Z obrázku je to zřejmé. Nyní je potřeba zakódovat tuto informaci pomocí polí, abychom s ní pohli dále pracovat.
+Začínáme na indexu 0 <=> na obrazovce 0. Z této obrazovky se můžeme posunout pouze v pravo. Tímto pohybem se dostaneme na obrazovku 1 <=> index nastavíme na 1. Z obrázku je to zřejmé. Nyní je potřeba zakódovat tuto informaci pomocí polí, abychom s ní mohli dále pracovat.
 
-Z indexu 0 se pohybem dostaneme do indexu 1. Nastavíme tedy nultý prvek pole _right_ na 1. Nulté prvky v ostatních polích nastavíme na -1, protože se nemáme kam posunout.
+Z indexu 0 se pohybem dostaneme do indexu 1. Nastavíme tedy nultý prvek pole `right` na 1. Nulté prvky v ostatních polích nastavíme na -1, protože se nemáme kam posunout.
 
 ```js
 let index = 0;
@@ -48,7 +48,7 @@ const up = [-1, 4];
 const down = [-1, 6];
 ```
 
-Dále pokračujeme s obrazovkou s indexem 2, pak 3... až 6. Tímto způsobem nenaplníme všechna pole.
+Dále pokračujeme s obrazovkou s indexem 2, pak 3... až 6. Tímto způsobem naplníme všechna pole.
 
 ```js
 const left = [-1, 0, 1, 2, -1, -1, -1];
@@ -57,7 +57,7 @@ const up = [-1, 4, -1, 5, -1, -1, 1];
 const down = [-1, 6, -1, -1, 1, 3, -1];
 ```
 
-Na začátku tedy zobrazíme uživateli pouze šipku doprava. V jeho dalším tahu všechny čtyři šipky. Jestli máme šipku skrýt nebo zobrazit zjistíme velmi jednoduše:
+Na začátku tedy zobrazíme uživateli pouze šipku doprava. V jeho dalším tahu všechny čtyři šipky. Jestli máme šipku skrýt nebo zobrazit zjistíme velmi jednoduše.
 
 ```js
 if (left[index] == -1) {

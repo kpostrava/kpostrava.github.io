@@ -7,7 +7,7 @@ order: 4
 
 ## Zadání Únikovky
 
-Na stránce code.org si v protředí "App lab" vytvořte nový projekt. Vaším cílem bude vytvořit Únikovku.
+Na stránce code.org si v protředí App lab vytvořte nový projekt. Vaším cílem bude vytvořit Únikovku.
 
 Únikovka je hra, jejímž cílem je vyřešit hádanky a odhalit tak tajemství. Vytvořte svoji vlastní hru, která bude obsahovat různé hádanky, které bude muset uživatel vyluštit.
 

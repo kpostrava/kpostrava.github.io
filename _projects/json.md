@@ -40,14 +40,14 @@ let ceny_objekt = JSON.parse(`{
 Nyní můžeme na základě klíče získat hodnotu. Cheme například zjistit kolik stojí notebook a tablet. Můžeme použít dvě různe syntaxe.
 
 ```js
-// dot notation - tečková notace
+// dot notation - "tečková notace"
 const cena_notebook = ceny_objekt.notebook; // [11999, 10099]
 
-// bracket notation - závorková notace
+// bracket notation - "závorková notace"
 const cena_tablet = ceny_objekt["tablet"]; // [14999, 13099]
 ```
 
-Můžeme rovněž jednoduše upravit data objektu. Mějme například slevu na mobilní telefony při nákupu na splátky. Upravíme tedy prvek v poli na indexu 1.
+Rovněž můžeme jednoduše upravit data objektu. Mějme například slevu na mobilní telefony při nákupu na splátky. Upravíme tedy prvek v poli na indexu 1.
 
 ```js
 ceny_objekt.mobil[1] = 9999;
@@ -70,7 +70,7 @@ Nyní můžeme cenu u mobilu upravit tímto způsobem.
 ceny_objekt.mobil.splatky = 9999;
 ```
 
-Můžeme také tuto strukturu zcela změnit. Objekty můžeme přidávat do pole. Uděláme si tedy seznam zařízení, kde každé bude reprezentováno jako JSON.
+Můžeme také tuto strukturu zcela změnit. Objekty přidáme do pole. Uděláme si tedy seznam zařízení, kde každé bude reprezentováno pomocí JSONu.
 
 ```json
 [
@@ -105,7 +105,7 @@ Můžeme také tuto strukturu zcela změnit. Objekty můžeme přidávat do pole
 ]
 ```
 
-Tento přístup může být výhodnější pokud checem změnit určitou vlastnost u všech prvnků najedou. Můžeme například veškere zboží zlevnit o 100 Kč.
+Tento přístup může být výhodnější, pokud checem změnit určitou vlastnost u všech prvnků najedou. Snadlo lze provést například zlevnění veškerého zboží o 100 Kč.
 
 ```js
 for (let i = 0; i < pole.length; i++) {

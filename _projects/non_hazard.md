@@ -22,7 +22,7 @@ order: 3
     img{width: 100px}
  </style>
 
-V prostředí applab na stránce [code.org](https://code.org) vytvořte nový projekt. Vašim úkolem je vytvořit hru na libovolné téma s prakticky neomezenou fukcionalitou. Jediný požadavek je - systém sázek. Hra musí probíhat v kolech, na každé kolo lze vsadit. Hráč může přijít o všechny peníze a v takovém případě se mu zobrazí posměšná obrazovka.
+V prostředí App lab na stránce [code.org](https://code.org) vytvořte nový projekt. Vašim úkolem je vytvořit hru na libovolné téma s prakticky neomezenou fukcionalitou. Jediný požadavek je **systém sázek**. Hra musí probíhat v kolech. Na každé kolo lze vsadit. Hráč může přijít o všechny peníze a v takovém případě se mu zobrazí posměšná obrazovka.
 
 ### Příklady hotových projektů:
 

@@ -7,7 +7,7 @@ order: 2
 
 # Ovládácí prvky na HTML stránce
 
-Dosud jsme používali pro tvorbu grafických aplikací rozhraní applab. Měli jsme tak k dispozici spoustu užitečných funckí pro manipulaci s ovládacími prvky aplikace.
+Dosud jsme používali pro tvorbu grafických aplikací rozhraní App lab. Měli jsme tak k dispozici spoustu užitečných funckí pro manipulaci s ovládacími prvky aplikace.
 
 ```js
 onEvent("id", "click", function () {});
@@ -21,7 +21,7 @@ showElement("id");
 setProperty("id", "width", 100);
 ```
 
-Vytváření, rozmístění a stylování prvků jsme prováděli rovněž v grafickém prostředí. Nyní musíme strukturu našeho grafického rozhrání vytvořit pomocí HTML tagů. Základní struktura každé HTML stránky je složena z hlavičky - `<head>` a těla `<body>`. Obsah, který má být zobrazen uživateli se vkládá do tagu `<body>`.
+Vytváření, rozmístění a stylování prvků jsme prováděli rovněž v grafickém prostředí. Nyní musíme strukturu našeho grafického rozhrání vytvořit pomocí HTML tagů. Základní struktura každé HTML stránky je složena z hlavičky - `<head>` a těla `<body>`. Obsah, který má být zobrazen uživateli, se vkládá do tagu `<body>`.
 
 ```html
 <!DOCTYPE html>
@@ -74,14 +74,14 @@ Javascript píšeme do tagu `<script>`.
 </script>
 ```
 
-💡 Otevřte si v prohlížeči "nástroje pro vývojáře". Zejména konzoli.
+> 💡 Otevřte si v prohlížeči "nástroje pro vývojáře". Zejména konzoli.
 
 ### Vybrání prvku
 
 ```js
 document.getElementById("id"); // Vybrání elementu podle id
 
-document.querySelector(".class"); //.class, #id, element, - Vybrání podle css selectoru
+document.querySelector(".class"); //.class, #id, element, - Vybrání podle CSS selectoru
 ```
 
 ### Vložení textu do prvku
@@ -89,12 +89,12 @@ document.querySelector(".class"); //.class, #id, element, - Vybrání podle css 
 ```js
 document.getElementById("pozdrav").innerText = "čau";
 
-// Ekvivalent k setText("id", "text");
+// Ekvivalent k setText("id", "text") z prostředí App lab
 ```
 
 ### Vytvoření funkce
 
-Pokud chceme sputit určitý kód při zmáčknutí tlačítka, musíme jej "zabalit" do funkce. Máme dva možné zápisy.
+Pokud chceme sputit určitý kód při zmáčknutí tlačítka, musíme jej "zabalit" do funkce. Máme dva možné zápisy. Pro naše účely, je druhý způsob vhodnější.
 
 ```js
 function start() {
@@ -132,29 +132,28 @@ element.style.top = "10px"; // Vzdálenost od horního okraje
 ### Náhodné číslo
 
 ```js
-const nahodne_cislo = Math.floor(Math.random() * 10); // <0, 9>
+const prvni_nahodne_cislo = Math.floor(Math.random() * 10); // <0, 9>
 
-const nahodne_cislo = Math.floor(Math.random() * 10 + 1); // <1, 10>
+const druhe_nahodne_cislo = Math.floor(Math.random() * 10 + 1); // <1, 10>
 ```
 
 ### Jednoduchá aplikace
 
-Pojďeme využít nově nabyté vědomosti k vytvoření jednoduché aplikace. Vytvořímé webovou stránku se dvěmi číselnými vstupy, tlačítkem a textem. Uživatel zadá rozsah hodnot a my mu vygenerujeme náhodné číslo v tomto rozsahu.
+Pojďeme využít nově nabyté vědomosti k vytvoření jednoduché aplikace. Vytvoříme webovou stránku se dvěma číselnými vstupy, tlačítkem a textem. Uživatel zadá rozsah hodnot a my mu vygenerujeme náhodné číslo v tomto rozsahu.
 
 Jako první věc si musíme otevřít vývojé prostředí - vscode. Vytovříme si nový soubor - `index.html`. Poté si vytvoříme sturkturu stránky. Ve vývojovém prostředí vscode nám stačí napsat "!" a stisknout klávesu enter.
 
 <h5 a><strong><code>index.html</code></strong></h5>
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
 </html>
 ```
 
@@ -238,7 +237,7 @@ Pojďme vytvořit v javascriptu funkci pro generování čísel.
 const generuj = () => {};
 ```
 
-Potřebuje zjistit rozsah ve kterém máme generovat čísla. Tuto hodnotu musíme převést na číslo.
+Potřebuje zjistit rozsah ve kterém máme generovat čísla. Získáme hodnoty od uživatele z jednotlivých textových polí. Tyto hodnoty musíme převést na čísla.
 
 ```js
 let min = Number(document.getElementById("minimum").value);
