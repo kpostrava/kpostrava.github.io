@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ovládací prvky na HTML stránkách
+title: Jednoduchá aplikace
 category: "html"
 order: 3
 ---
