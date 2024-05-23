@@ -34,7 +34,7 @@ Jako první si musíme otevřít vývojé prostředí - vscode. Vytovříme si n
     <title>Skvělá aplikace</title>
   </head>
   <body>
-    <!-- TEĎ tě zajímá jen tento prostor -->
+    <!-- Grafické rozhraní aplikace -->
   </body>
 </html>
 ```
@@ -72,9 +72,27 @@ Hodnotu od uživatele můžeme získat pomocí tagu `<input>`. `<input />` má t
 
 Když teď přecházíme na technologie HTML, CSS, JS. Bohužel zde již nemáme k dispozici předpřipravené funkce pro práci s grafickým rozhraním. Musíme si je naimplementovat sami. Interakci s prvky HTML stránky označujeme jako DOM (document object model) manipulaci.
 
-Javascript píšeme do tagu `<script>`.
+Javascript píšeme do tagu `<script>` a můžeme jej vložit na úplný konec dokumentu.
 
 ```html
+<script>
+  console.log("Ahoj z JS!"); // Vypíše text do konzole
+</script>
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skvělá aplikace</title>
+  </head>
+  <body>
+    <!-- Grafické rozhraní aplikace -->
+  </body>
+</html>
+
 <script>
   console.log("Ahoj z JS!"); // Vypíše text do konzole
 </script>
