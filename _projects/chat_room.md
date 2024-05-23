@@ -2,7 +2,7 @@
 layout: post
 title: Chat aplikace (Sockets.io + room)
 category: "html"
-order: 7
+order: 8
 ---
 
 # Rozdělení do skupin (room)

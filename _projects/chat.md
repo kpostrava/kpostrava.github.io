@@ -2,7 +2,7 @@
 layout: post
 title: Chat aplikace (Sockets.io)
 category: "html"
-order: 6
+order: 7
 ---
 
 # Základní komunikace
