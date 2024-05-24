@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Chat aplikace (Sockets.io)
-category: "html"
-order: 7
+category: "nodejs"
+order: 2
 ---
 
 # Základní komunikace
