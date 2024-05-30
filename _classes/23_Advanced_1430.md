@@ -17,4 +17,4 @@ Místnost: EB406
 Náplň: Učíme se programovat v jazyce JavaScript od základů, což je například práce s proměnými, eventy.
 
 ## Výtvory žáků
-[Escape the doge house - Dan](https://studio.code.org/projects/applab/zZyrSaBj1APe1mRLN3FBv98VIKdoQtHmau_XF1x2W6g)
+- [Escape the doge house - Dan](https://studio.code.org/projects/applab/zZyrSaBj1APe1mRLN3FBv98VIKdoQtHmau_XF1x2W6g)
