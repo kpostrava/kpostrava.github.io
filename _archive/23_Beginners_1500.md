@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Začátečníci, pá 15:00
+title: 23/24-archiv-Začátečníci pátek 14:30
 category:
 ---
 

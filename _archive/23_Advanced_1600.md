@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pokročilí, čt 16:00
+title: 23/24-archiv-Pokročilí čtvrtek 16:00
 category:
 ---
 

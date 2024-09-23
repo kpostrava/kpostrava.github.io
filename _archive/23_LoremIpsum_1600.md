@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lorem Ipsum, čt 16:00
+title: 23/24-archiv-Lorem Ipsum, čt 16:00
 category:
 ---
 
