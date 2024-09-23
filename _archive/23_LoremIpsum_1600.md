@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Lorem Ipsum, čt 16:00"
-category: "side"
+title: Lorem Ipsum, čt 16:00
+category:
 ---
 
 ## Úvod

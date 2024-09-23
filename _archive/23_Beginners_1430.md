@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Začátečníci, čt 14:30"
-category: "side"
+title: Začátečníci, čt 14:30
+category:
 ---
 
 ## Úvod

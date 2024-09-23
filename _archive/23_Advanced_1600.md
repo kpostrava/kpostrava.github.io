@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Pokročilí, čt 16:00"
-category: "side"
+title: Pokročilí, čt 16:00
+category:
 ---
 
 ## Úvod

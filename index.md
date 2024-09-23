@@ -23,12 +23,13 @@ Areál VŠB, budova Nová FEI. Místnosti jsou uvedeny u konkrétních kroužků
 
 #### Informace a registrace do kroužků
 
-- [Začátečníci (čtvrtek 14:30)](https://www.zlepsisitechniku.vsb.cz/program/929)
-- [Začátečníci (čtvrtek 16:00)](https://www.zlepsisitechniku.vsb.cz/program/945)
-- [Začátečníci (pátek 15:00)](https://www.zlepsisitechniku.vsb.cz/program/930)
-- [Pokročilí (čtvrtek 14:30)](https://www.zlepsisitechniku.vsb.cz/program/928)
-- [Pokročilí (čtvrtek 16:00)](https://www.zlepsisitechniku.vsb.cz/program/931)
-- [Pokročilí - Java (čtvrtek 15:30)](https://www.zlepsisitechniku.vsb.cz/program/934)
+- [Kroužek programování I (čtvrtek 14:30)](https://www.zlepsisitechniku.vsb.cz/program/1221)
+- [Kroužek programování I (čtvrtek 16:00)](https://www.zlepsisitechniku.vsb.cz/program/1222)
+- [Kroužek programování II (čtvrtek 14:30)](https://www.zlepsisitechniku.vsb.cz/program/1219)
+- [Kroužek programování II (čtvrtek 16:00)](https://www.zlepsisitechniku.vsb.cz/program/1220)
+- [Kroužek programování III (čtvrtek 14:30)](https://www.zlepsisitechniku.vsb.cz/program/1223)
+- [Kroužek programování III (čtvrtek 16:00)](https://www.zlepsisitechniku.vsb.cz/program/1224)
+- [Pokročilí - Java (čtvrtek 16:00)](https://www.zlepsisitechniku.vsb.cz/program/934)
 
 #### Mapa
 
