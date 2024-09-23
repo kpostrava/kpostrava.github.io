@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Pokročilí, čt 14:30"
-category: "side"
+title: 23/24-archiv-Pokročilí čtvrtek
+category:
 ---
 
 ## Úvod
