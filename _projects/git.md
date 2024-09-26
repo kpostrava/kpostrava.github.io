@@ -6,11 +6,9 @@ order: 1
 ---
 
 # Git - Úvod
-
 Git nám především umožní jednoduše sdílet soubory (tzn. náš zdrojový kód) s dalšími lidmi. Nicméně funkcí, kterém nám git nabízí je mnohem více. Uložením na git server vytvoříme zálohu našeho projektu na internetu, budeme se moci vracet k předchozím verzím, řešit konflikty v kódu a také budeme moci vytvářet tzv. větve. K práci s gitem budeme z počátku používat command line příkazy, které si dnes vyzkoušíme.
 
 # Github
-
 Jednomu projektu se na gitu říká **repository**. Repository můžete mít lokální v adresáři, nebo někde na server třeba na [github.com](https://github.com/). Začneme tedy tím, že na `github.com`:
 
 1. vytvoříte účet (např. `hacker_ostravski`),
@@ -26,20 +24,18 @@ Jednomu projektu se na gitu říká **repository**. Repository můžete mít lok
 Po vytvoření se nám v `github.com` otevře stránka https://github.com/hacker_ostravski/KeyDown našeho nově vytvořeného repository. Prozatím je repository prázdné a stránka by tedy měla vypadat podobně jako to vidíme na obrázku.
 ![Nové repository v github.com](/images/git_repository.png)
 
-Naše repository je tedy umístěno na serveru `github.com` a my budeme chtít vytvořit jeho kopií v na lokálním počítači. K tomu využijeme příkazovou řádku.
+Naše repository je tedy umístěno na serveru `github.com` a my budeme chtít vytvořit jeho kopií na lokálním počítači. K tomu využijeme příkazovou řádku.
 
-## Přidávání změn
-
+## Vytvoření lokální kopie
 Otevřete příkazovou řádku (v nabídce Start napište `cmd`) a přesuňte se do adresáře `c:\users\kp\git`. Následně proveďte stažení repository do lokálního adresáře. Adresář se bude jmenovat stejně jako repository.
-
 ```bash
 cd c:\users\kp\git
 git clone https://github.com/hacker_ostravski/KeyDown
 cd KeyDown
 ```
 
-Nyní se nacházíme v naší lokální kopií repository `KeyDown`. Nyní se pustíme do vytvoření nového souboru, jeho umístění do lokálního repository a jeho následné zkopírování na `github.com`.
-
+## Přidávání souboru
+Nacházíme se v naší lokální kopií repository `KeyDown`. Tato kopie je tedy reprezentována adresářem KeyDown. Nyní se pustíme do vytvoření nového souboru, jeho umístění do repository a následné zaslání těchto změn na `github.com`.
 ```bash
 echo # Moje nove repository > readme.md
 git add readme.md
@@ -50,9 +46,9 @@ git push
 **Tuto posloupnost `git` příkazů si zapamatujte. Budete ji používat vemi často.** Na následujícím obrázku jsou tyto příkazy vyjádřeny schématicky.
 ![Základní příkazy](/images/git_basic.png)
 
-Po provedení příkazů se přepněte do prohlížeče a znovu si zobrazte svoje repository na `github.com`. Nyní už by mělo obsahovat jeden soubor `readme.md`, který jsme tam přidali. Také se na stránce objevil popis, který odpovídá textu v `readme.md`. Git servery vždy automaticky zobrazují obsah `readme.md` na stránce repository.
+Po provedení příkazů se přepněte do prohlížeče, znovu si zobrazte svoje repository na `github.com`, které už by mělo obsahovat přidaný soubor `readme.md`. Také se na stránce objevil popis, který odpovídá textu v `readme.md`. Git servery vždy automaticky zobrazují obsah `readme.md` na stránce repository.
 
-> **Úkol 1:**
+> **Úkol 1: (Provedení změny v readme.md)**
 > Ve svém počítači proveďte změnu `readme.md` (cokoli do něj dopište) a následně tuto změnu propagujte do repository. Použijte stejnou posloupnost git příkazů (tzn. `add`, `commit`, `push`).
 
 Příkaz `git add` jsme využili k přidávání změn v jednom souboru. Nicméně tento příkaz dokáže přidat i změny z více soborů najednou, takže jej nemusíme spouštět pro každý soubor zvlášť. Místo jména souboru dáme hvězdičku, která představuje libovolný řetězec.
@@ -67,7 +63,7 @@ Pokud chceme vložit do staging area změny, které jsme provedli v souborech, k
 
 ## Přidání spolupracovníka (collaborators)
 
-Pro přidání spolupracovníka přejdeme opět na stránku https://github.com/hacker_ostravski/KeyDow. Vybereme nahoře záložku `settings` a pak vlevo `collaborators`. Otevře se nám okno, kde můžeme přidat uživatele jak vidíme na obrázku. Přidejte uživatele se kterým jste domluveni (on vás také přidá).
+Pro přidání spolupracovníka přejdeme opět na stránku https://github.com/hacker_ostravski/KeyDown. Vybereme nahoře záložku `settings` a pak vlevo `collaborators`. Otevře se nám okno, kde můžeme přidat uživatele jak vidíme na obrázku. Přidejte uživatele se kterým jste domluveni (on vás také přidá).
 ![collaborators](/images/git_colaborator.png)
 
 Nyní máme přístup k repository druhého uživatele. Řekněme, že jde o uživatele `polrajch`. Nyní chcete přistoupit k jeho repository a přidat mu do souboru `readme.md` nějaké změny. Opět repository stáhneme do lokálního adresesáře provedeme změny a ty následně potvrdíme posloupností příkazů `add`, `commit`, `push`.
