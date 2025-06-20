@@ -18,12 +18,12 @@ Místnost: EB207
 
 ## Práce studentů
 
-[Tadeáš Pokluda - Flappy bee](https://studio.code.org/projects/spritelab/Sg8siG7rtXs-GRrFQTliKX07EkalM1F92-qkDmGiNXw)
+[Tadeáš P. - Flappy bee](https://studio.code.org/projects/spritelab/Sg8siG7rtXs-GRrFQTliKX07EkalM1F92-qkDmGiNXw)
 
-[Tadeáš Pokluda - Minimus](https://studio.code.org/projects/spritelab/patnfGPEMFW1Y-kKkzzHo0qvAVZk3vBnPZiejBlWYxo)
+[Tadeáš P. - Minimus](https://studio.code.org/projects/spritelab/patnfGPEMFW1Y-kKkzzHo0qvAVZk3vBnPZiejBlWYxo)
 
-[Daniel Tulis - Ruleta](https://studio.code.org/projects/applab/sPEEmPOKSNoSDo2zrgbIGa7OS9pS7NnfgHBU9DkTtNs)
+[Daniel T. - Ruleta](https://studio.code.org/projects/applab/sPEEmPOKSNoSDo2zrgbIGa7OS9pS7NnfgHBU9DkTtNs)
 
-[Lukáš Kresta - Automat](https://studio.code.org/projects/applab/kfpQPeeTn6H7YDITnQr_7pwR_5qa0gWLsTeyqwV2wKo)
+[Lukáš K. - Automat](https://studio.code.org/projects/applab/kfpQPeeTn6H7YDITnQr_7pwR_5qa0gWLsTeyqwV2wKo)
 
-[Daniel Jemelka - Kolo štěsí](https://studio.code.org/projects/applab/syrWVgXqDww5kd4yXrWb5NN-co9MGEB3u8g3cMSNyao)
+[Daniel J. - Kolo štěsí](https://studio.code.org/projects/applab/syrWVgXqDww5kd4yXrWb5NN-co9MGEB3u8g3cMSNyao)
